@@ -8,20 +8,21 @@ export default function Skills() {
                 <h2 className="uppercase font-semibold m-auto py-1">
                     My skills
                 </h2>
-                <table className="table-auto left justify-items-end">
+                <table className="table-auto left justify-end">
                     <tbody>
                         <tr>
-                            <td className="border-r-2 p-r-2"><h4>Hardskills</h4></td>
+                            <td className="border-r-2 pr-2"><h4>Hardskills</h4></td>
                             <td>
                                 <div className="flex flex-wrap">
                                     {hardskills.map((skill, index) => (
                                         <div className="p-2 w-1/3" key={index}>
-                                            <div className="hover:bg-gray-100 rounded flex p-2
-                                             md:text-6xl text-4xl icon-blue"
-                                                       data-tip={skill.name}
-                                                       data-for={skill.name}>
+                                            <div className="hover:bg-gray-100 rounded flex py-2 pl-2">
+                                                <div className="md:text-6xl text-4xl icon-blue">
                                                     {skill.icon}
-                                                <ReactTooltip id={skill.name} data-id={"tooltip"} place="top" effect="solid" type="dark" />
+                                                </div>
+                                                <div className="ml-0 mr-auto my-auto">
+                                                    {skill.name}
+                                                </div>
                                             </div>
                                         </div>
                                     ))}
@@ -31,24 +32,26 @@ export default function Skills() {
                     </tbody>
                 </table>
                 <br/>
-                <table className="table-auto right justify-items-start">
+                <table className="table-auto right justify-start">
                     <tbody>
                         <tr>
                             <td>
                                 <div className="flex flex-wrap">
                                     {hardskills.map((skill, index) => (
-                                        <div className="p-2 w-1/3" key={index}>
-                                            <div className="hover:bg-gray-100 rounded flex p-2 md:text-6xl text-4xl icon-red"
-                                                       data-tip={skill.name}
-                                                       data-for={skill.name}>
+                                        <div className="py-2 w-1/3" key={index}>
+                                            <div className="hover:bg-gray-100 rounded flex py-2 pr-2">
+                                                <div className="ml-auto mr-0 my-auto">
+                                                    {skill.name}
+                                                </div>
+                                                <div className="md:text-6xl text-4xl icon-red">
                                                     {skill.icon}
-                                                <ReactTooltip id={skill.name} data-id={"tooltip"} place="top" effect="solid" type="dark" />
+                                                </div>
                                             </div>
                                         </div>
                                     ))}
                                 </div>
                             </td>
-                            <td className="border-l-2 p-l-2"><h4>Softskills</h4></td>
+                            <td className="border-l-2 pl-4"><h4>Softskills</h4></td>
                         </tr>
                     </tbody>
                 </table>
