@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+}
+
+section{
+  width: 100%;
+  padding-bottom: 2%;
+  border-bottom: thin solid rgba(0, 0, 0, 0.10);
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  word-spacing: 0px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center
+}
+
+h3 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  word-spacing: 0px;
+  line-height: 52px;
+  text-align: center;
+  padding-bottom: .05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(0, 0, 0, .3);
+}
+
+.typed {
+  font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
+  font-size: 30px;
+  letter-spacing: 1.2px;
+  word-spacing: 0px;
+  line-height: 52px;
+  text-align: center;
+  padding-bottom: .05em;
+  border-bottom-color: rgba(0, 0, 0, .3);
+}
+
+.soup {
+  z-index: 1000;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.Typewriter__cursor {
+  font-size: 36px;
+  transform: translateX(-100%);
+  transform: translateY(-10%);
+  user-select: none;
+}
+
+.globe {
+  /* border: 2px solid #000; */
+  border-radius: 40%;
+  height: 30vh;
+  width: 30vh;
+  /* left: 50%; */
+  overflow: hidden;
+  /* position: absolute; */
+  /* left: 25%;
+  transform: translateX(-50%); */
+
+
+}
+
+.globe svg {
+  animation: rotation 30s linear 0s infinite;
+
+
+}
+
+.globe svg path {
+  stroke: #FFF;
+  stroke-width: 0.5px;
+}
+
+@keyframes rotation {
+  from {
+    transform: translateX(0);
+  }
+
+  from {
+    transform: translateX(-50%);
+  }
+}
+
+.website-container {
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  margin: auto;
+  width: 60vh;
+  overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .website-container {
+
+    max-width: 40vh;
+  }
+}
+
+.underline-css:after {
+  content: "";
+  float: left;
+  background: #43434aAA;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+}
+
+html,
+body {
+  /* background-color: #202023; */
+  /* cursor: none; */
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.website-container {
+
+  max-width: 60vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.copyright-text{
+  font-size: small;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clickMe::after {
+  content: '';
+  transform: translateY(-350%) translateX(220%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #000;
+  text-align: center;
+  clear: both;
+  position: absolute;
+  font-weight: bold;
+  transition: all .8s;
+}
+
+.clickMe::before {
+  content: 'Click Me!';
+  transform: translateY(-70px) translateX(-50%);
+  min-width: 100px;
+  left: 50%;
+  word-break:unset;
+  font-size: x-large;
+  height: 0px;
+  /* text-align: center; */
+  clear: both;
+  position: absolute;
+  font-weight: bold;
+  transition: all .8s;
+}
+
+.clickMe:hover::after {
+  border-top: 20px solid #FFFFFF00;
+  transform: translateY(-350%) translateX(220%);
+  transition: all .8s;
+}
+
+.clickMe:hover::before {
+  content: "...Open ➔";
+  transition: all .8s;
+  font-size: xx-large;
+
+}
+
+.clickMe:hover {
+  color: #333333;
+  transition: all .8s;
+}
+
+div#wave {
+  position:relative;
+
+}
+
+div#wave .dot {
+  display:inline-block;
+  animation: wave 1.3s linear infinite;
+
+}
+div#wave .dot:nth-child(2) {
+  animation-delay: -1.1s;
+}
+
+div#wave .dot:nth-child(3) {
+  animation-delay: -0.9s;
+}
+div#wave .dot:nth-child(4) {
+  animation-delay: -0.7s;
+}
+
+@keyframes wave {
+  0%, 60%, 100% {
+    transform: initial;
+  }
+
+  30% {
+    transform: translateY(-5px);
+  }
+}
+
+.block {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 100px;
+  z-index: 100;
+  background-color: white;
+
+}
+
+table.left{
+  text-align: left;
+  position: relative;
+  margin-left: 0;
+}
+
+table.right{
+  text-align: right;
+  position: relative;
+  margin-right: 0;
+}
