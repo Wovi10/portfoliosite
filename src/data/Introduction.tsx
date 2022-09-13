@@ -1,5 +1,3 @@
-import '../css/textlayout.css'
-
 export default function IntroductionText() {
     return(
         <div className="textleft flex-wrap">
@@ -30,13 +28,14 @@ export default function IntroductionText() {
             <div className="paragraph">
                 My fifth year in Secondary school (2017) was when I chose to go into IT.
                 <br/>
-                It was a logical choice because my dad has always been an ITer. After my dreams to become an astronomer kind of died out,
+                It was a logical choice because my dad has always been an ITer.
+                <br/>
+                After my dreams to become an astronomer kind of died out,
                 I changed from sciences to <strong>IT management</strong>.
                 <br/>
                 This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
                 But more about that in my study section.
             </div>
         </div>
-
     );
 }

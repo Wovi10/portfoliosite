@@ -2,12 +2,12 @@ import IntroductionText from "../data/Introduction";
 
 export default function Introduction() {
     return (
-        <section id="socials" className="my-5 mx-auto">
+        <section id="socials" className="my-5 mx-auto pb-5">
             <div className="container flex flex-col">
-                <div className="title m-auto left-1/2 py-1">
+                <div className="title textleft">
                     Hello!!
                 </div>
-                <div className="flex mx-auto md:w-1/2">
+                <div className="max-w-1/5">
                     <IntroductionText />
                 </div>
             </div>
