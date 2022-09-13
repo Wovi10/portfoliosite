@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p.copyright-text{
+    font-size: small;
+}
+
+div.title{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    letter-spacing: 3.6px;
+    word-spacing: 0px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+div.subtitle{
+    font-family: 'Rubik', sans-serif;
+    font-size: larger;
+    padding-top: 0.5rem;
+}
+div.paragraph{
+    padding-bottom: 0.5rem;
+    max-width: 75%;
+}
+
+div.textleft{
+    text-align: left;
+}
+div.textright{
+    text-align: right;
+}
+div.textcenter{
+    text-align: center;
+}
