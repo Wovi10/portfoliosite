@@ -2,9 +2,9 @@ import '../css/textlayout.css'
 
 export default function IntroductionText() {
     return(
-        <div className="textleft">
+        <div className="textleft flex-wrap">
             <div className="subtitle">
-                <strong>Welcome</strong> to my very own website.
+                Welcome to my very own website.
             </div>
             <div className="paragraph">
                 Here you'll find who I am and what drives me.
@@ -19,7 +19,22 @@ export default function IntroductionText() {
                 In 2001 I was born in Antwerp, Belgium.
                 <br/>
                 I speak both <strong>Dutch</strong> and <strong>English</strong> fluently as well as a bit of <strong>French</strong>.
-                
+                <br/>
+                All my live I've been sporty and a bit competitive. (No I'm not one of those people who can't lose.)
+                <br/>
+                Taking the lead is not a problem, although I prefer being led if possible.
+            </div>
+            <div className="subtitle">
+                Why IT?
+            </div>
+            <div className="paragraph">
+                My fifth year in Secondary school (2017) was when I chose to go into IT.
+                <br/>
+                It was a logical choice because my dad has always been an ITer. After my dreams to become an astronomer kind of died out,
+                I changed from sciences to <strong>IT management</strong>.
+                <br/>
+                This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
+                But more about that in my study section.
             </div>
         </div>
 
