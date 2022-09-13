@@ -149,17 +149,13 @@ body {
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.website-container {
-
-  max-width: 60vh;
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
-.copyright-text{
-  font-size: small;
+
+.website-container {
+  max-width: 60vh;
 }
 
 * {
@@ -257,16 +253,4 @@ div#wave .dot:nth-child(4) {
   z-index: 100;
   background-color: white;
 
-}
-
-table.left{
-  text-align: left;
-  position: relative;
-  margin-left: 0;
-}
-
-table.right{
-  text-align: right;
-  position: relative;
-  margin-right: 0;
 }

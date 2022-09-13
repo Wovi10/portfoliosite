@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+p.copyright-text{
+    font-size: small;
+}
+
 div.title{
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
