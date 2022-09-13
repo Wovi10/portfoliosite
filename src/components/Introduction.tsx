@@ -7,7 +7,7 @@ export default function Introduction() {
                 <div className="title textleft">
                     Hello!!
                 </div>
-                <div className="max-w-1/5">
+                <div>
                     <IntroductionText />
                 </div>
             </div>
