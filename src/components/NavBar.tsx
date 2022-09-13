@@ -8,9 +8,11 @@ function HomeButton() {
 
 export default function NavBar() {
     return (
-        <nav className="w-screen flex justify-between overflow-hidden px-4 md:px-20 lg:px-36 align-middle justify-center
-            h-20 bg-black inset-0 mb-1">
-            <HomeButton />
-        </nav>
+        <header>
+            <nav className="w-screen flex justify-between overflow-hidden px-4 md:px-20 lg:px-36 align-middle justify-center
+            h-20 bg-black inset-0 mb-1 fixed z-40">
+                <HomeButton />
+            </nav>
+        </header>
     );
 }
