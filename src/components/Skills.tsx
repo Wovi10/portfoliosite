@@ -10,7 +10,7 @@ export default function Skills() {
                 <table className="table-auto left justify-end">
                     <tbody>
                         <tr>
-                            <td className="border-r-2 pr-2"><h4>Hardskills</h4></td>
+                            <td className="border-r-2 pr-2"><h3>Hardskills</h3></td>
                             <td>
                                 <div className="flex flex-wrap">
                                     {hardskills.map((skill, index) => (
@@ -19,7 +19,7 @@ export default function Skills() {
                                                 <div className="md:text-6xl text-4xl icon-blue">
                                                     {skill.icon}
                                                 </div>
-                                                <div className="ml-0 mr-auto my-auto  overflow-hidden">
+                                                <div className="ml-0 mr-auto my-auto overflow-hidden hidden md:block">
                                                     {skill.name}
                                                 </div>
                                             </div>
@@ -39,7 +39,7 @@ export default function Skills() {
                                     {hardskills.map((skill, index) => (
                                         <div className="py-2 w-1/3" key={index}>
                                             <div className="hover:bg-gray-100 rounded flex py-2 pr-2">
-                                                <div className="ml-auto mr-0 my-auto overflow-hidden">
+                                                <div className="ml-auto mr-0 my-auto overflow-hidden hidden md:block">
                                                     {skill.name}
                                                 </div>
                                                 <div className="md:text-6xl text-4xl icon-red">

@@ -25,7 +25,7 @@ export default function Socials() {
                                                 className="rounded flex no-underline hover:underline font-thin text-sm md:text-md"
                                             >
                                                 <i className={`${social.icon} mx-4`}></i>
-                                                <p className="flex-shrink-0 mr-4 text-white">{social.name} </p>
+                                                <p className="flex-shrink-0 mr-4 text-white hidden md:block">{social.name}</p>
                                             </a>
                                         </div>
                                 </p>
