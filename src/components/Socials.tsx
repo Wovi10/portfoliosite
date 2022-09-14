@@ -15,19 +15,20 @@ export default function Socials() {
                         <div className="flex items-center justify-center md:justify-start flex-wrap">
                             {socials.map((social, index) => (
                                 <p className="p-2 w-1/2" key={index}>
-                                        <div key={social.name}>
-                                            <a
-                                                title={social.hovertext}
-                                                type="button"
-                                                href={social.link}
-                                                target="_blank"
-                                                rel="noreferrer"
-                                                className="rounded flex no-underline hover:underline font-thin text-sm md:text-md"
-                                            >
-                                                <i className={`${social.icon} mx-4`}></i>
-                                                <p className="flex-shrink-0 mr-4 text-white hidden md:block">{social.name}</p>
-                                            </a>
-                                        </div>
+                                    <div key={social.name}>
+                                        <a
+                                            title={social.hovertext}
+                                            type="button"
+                                            href={social.link}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="rounded flex no-underline hover:underline font-thin text-sm md:text-md"
+                                        >
+                                            <i className={`${social.icon} mx-4`}></i>
+                                            <p className="flex-shrink-0 mr-4 text-white hidden md:block">{social.name}</p>
+                                            <p className="flex-shrink-0 mr-4 text-white block md:hidden">{social.mobile}</p>
+                                        </a>
+                                    </div>
                                 </p>
                             ))}
                         </div>
