@@ -1,4 +1,3 @@
-import ReactTooltip from "react-tooltip";
 import {hardskills} from "../data/Skills";
 
 export default function Skills() {

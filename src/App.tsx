@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import NavBar from "./components/NavBar";
-import './css/index.css';
 import './css/App.css';
+import './css/index.css';
 
 export default class App extends React.Component {
     state = {

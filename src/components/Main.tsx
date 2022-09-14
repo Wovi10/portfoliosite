@@ -1,7 +1,8 @@
-import Introduction from "./Introduction";
-import PortfolioTimeline from "./PortfolioTimeline";
-import Skills from "./Skills";
-import Socials from "./Socials";
+import {lazy} from 'react';
+const Introduction = lazy(() => import ("./Introduction"));
+const PortfolioTimeline = lazy(() => import ("./PortfolioTimeline"));
+const Skills = lazy(() => import ("./Skills"));
+const Socials = lazy(() => import ("./Socials"));
 
 export default function Main() {
     return (

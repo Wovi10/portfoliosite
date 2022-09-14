@@ -1,4 +1,5 @@
-import IntroductionText from "../data/Introduction";
+import {lazy} from 'react';
+const IntroductionText = lazy(() => import ("../data/Introduction"));
 
 export default function Introduction() {
     return (

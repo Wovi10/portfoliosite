@@ -21,6 +21,7 @@ export default function Socials() {
                                                 type="button"
                                                 href={social.link}
                                                 target="_blank"
+                                                rel="noreferrer"
                                                 className="rounded flex no-underline hover:underline font-thin text-sm md:text-md"
                                             >
                                                 <i className={`${social.icon} mx-4`}></i>

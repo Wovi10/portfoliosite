@@ -1,3 +1,7 @@
+import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
+import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import QuestionMarkRoundedIcon from '@mui/icons-material/QuestionMarkRounded';
 import {
     TimelineConnector,
     TimelineContent,
@@ -6,16 +10,8 @@ import {
     TimelineOppositeContent,
     TimelineSeparator
 } from "@mui/lab";
-import {Typography} from "@mui/material";
 import Timeline from '@mui/lab/Timeline';
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import HotelIcon from '@mui/icons-material/Hotel';
-import RepeatIcon from '@mui/icons-material/Repeat';
-import ClassRoundedIcon from '@mui/icons-material/ClassRounded';
-import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
-import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
-import QuestionMarkRoundedIcon from '@mui/icons-material/QuestionMarkRounded';
+import {Typography} from "@mui/material";
 
 export default function PortfolioTimeline() {
     return (
