@@ -1,10 +1,7 @@
-import {SiFuturelearn} from "react-icons/si";
-import {FaHandsHelping, FaRegStar} from "react-icons/fa";
-import {GiSandsOfTime, GiThink} from "react-icons/gi";
-import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
 import {
     DiAngularSimple,
-    DiGit, DiGoogleAnalytics,
+    DiGithubBadge,
+    DiGoogleAnalytics,
     DiJava,
     DiJavascript1,
     DiMysql,
@@ -13,8 +10,11 @@ import {
     DiPython,
     DiReact,
 } from "react-icons/di";
-
+import {FaHandsHelping, FaRegStar} from "react-icons/fa";
+import {GiSandsOfTime, GiThink} from "react-icons/gi";
+import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
 import {RiTeamLine} from "react-icons/ri";
+import {SiFuturelearn} from "react-icons/si";
 
 export const hardskills = [
     {
@@ -46,8 +46,8 @@ export const hardskills = [
         icon: <DiNodejsSmall/>
     },
     {
-        name: "Git",
-        icon: <DiGit/>
+        name: "GitHub",
+        icon: <DiGithubBadge/>
     },
     {
         name: "Python",
@@ -86,7 +86,7 @@ export const softskills = [
         icon: <FaHandsHelping/>
     },
     {
-        name: "Want to learn",
+        name: "Want to progress",
         icon: <SiFuturelearn/>
     },
     {
