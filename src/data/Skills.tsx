@@ -1,14 +1,20 @@
 import {
     DiAngularSimple,
-    DiGit,
+    DiGithubBadge,
+    DiGoogleAnalytics,
     DiJava,
     DiJavascript1,
     DiMysql,
     DiNodejsSmall,
     DiPostgresql,
     DiPython,
-    DiReact
+    DiReact,
 } from "react-icons/di";
+import {FaHandsHelping, FaRegStar} from "react-icons/fa";
+import {GiSandsOfTime, GiThink} from "react-icons/gi";
+import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
+import {RiTeamLine} from "react-icons/ri";
+import {SiFuturelearn} from "react-icons/si";
 
 export const hardskills = [
     {
@@ -40,8 +46,8 @@ export const hardskills = [
         icon: <DiNodejsSmall/>
     },
     {
-        name: "Git",
-        icon: <DiGit/>
+        name: "GitHub",
+        icon: <DiGithubBadge/>
     },
     {
         name: "Python",
@@ -52,40 +58,39 @@ export const hardskills = [
 
 export const softskills = [
     {
-        name: "Java, Hibernate , Spring Boot",
-        icon: <DiJava/>
+        name: "Team player",
+        icon: <RiTeamLine/>
     },
     {
-        name: "Angular",
-        icon: <DiAngularSimple/>
+        name: "Listener",
+        icon: <IoEarOutline/>
     },
     {
-        name: "JavaScript",
-        icon: <DiJavascript1/>
+        name: "Analytical",
+        icon: <DiGoogleAnalytics/>
     },
     {
-        name: "React",
-        icon: <DiReact/>
+        name: "Logical thinker",
+        icon: <GiThink/>
     },
     {
-        name: "PostGreSQL",
-        icon: <DiPostgresql/>
+        name: "Perfectionist within bounds",
+        icon: <FaRegStar/>
     },
     {
-        name: "MySQL",
-        icon: <DiMysql/>
+        name: "Respect deadlines",
+        icon: <GiSandsOfTime/>
     },
     {
-        name: "NodeJS",
-        icon: <DiNodejsSmall/>
+        name: "Open for help",
+        icon: <FaHandsHelping/>
     },
     {
-        name: "Git",
-        icon: <DiGit/>
+        name: "Want to progress",
+        icon: <SiFuturelearn/>
     },
     {
-        name: "Python",
-        icon: <DiPython/>
+        name: "Fast learner",
+        icon: <IoSpeedometerOutline/>
     },
-
 ];

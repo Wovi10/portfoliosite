@@ -1,4 +1,4 @@
-import {hardskills} from "../data/Skills";
+import {hardskills, softskills} from "../data/Skills";
 
 export default function Skills() {
     return (
@@ -36,13 +36,13 @@ export default function Skills() {
                         <tr>
                             <td>
                                 <div className="flex flex-wrap">
-                                    {hardskills.map((skill, index) => (
+                                    {softskills.map((skill, index) => (
                                         <div className="py-2 w-1/3" key={index}>
                                             <div className="hover:bg-gray-100 rounded flex py-2 pr-2">
                                                 <div className="ml-auto mr-0 my-auto overflow-hidden hidden md:block">
                                                     {skill.name}
                                                 </div>
-                                                <div className="md:text-6xl text-4xl icon-red">
+                                                <div className="md:text-5xl text-4xl icon-red">
                                                     {skill.icon}
                                                 </div>
                                             </div>
