@@ -1,14 +1,18 @@
+import {GiThink} from "react-icons/gi";
+import {IoEarOutline} from "react-icons/io5";
 import {
     DiAngularSimple,
-    DiGit,
+    DiGit, DiGoogleAnalytics,
     DiJava,
     DiJavascript1,
     DiMysql,
     DiNodejsSmall,
     DiPostgresql,
     DiPython,
-    DiReact
+    DiReact,
 } from "react-icons/di";
+
+import {RiTeamLine} from "react-icons/ri";
 
 export const hardskills = [
     {
@@ -52,40 +56,39 @@ export const hardskills = [
 
 export const softskills = [
     {
-        name: "Java, Hibernate , Spring Boot",
-        icon: <DiJava/>
+        name: "Team player",
+        icon: <RiTeamLine/>
     },
     {
-        name: "Angular",
-        icon: <DiAngularSimple/>
+        name: "Listener",
+        icon: <IoEarOutline/>
     },
     {
-        name: "JavaScript",
-        icon: <DiJavascript1/>
+        name: "Analytical",
+        icon: <DiGoogleAnalytics/>
     },
     {
-        name: "React",
-        icon: <DiReact/>
+        name: "Logical thinker",
+        icon: <GiThink/>
     },
     {
-        name: "PostGreSQL",
+        name: "Perfectionist within bounds",
         icon: <DiPostgresql/>
     },
     {
-        name: "MySQL",
+        name: "Respect deadlines",
         icon: <DiMysql/>
     },
     {
-        name: "NodeJS",
+        name: "Open for help",
         icon: <DiNodejsSmall/>
     },
     {
-        name: "Git",
+        name: "Want to learn",
         icon: <DiGit/>
     },
     {
-        name: "Python",
+        name: "Fast learner",
         icon: <DiPython/>
     },
-
 ];
