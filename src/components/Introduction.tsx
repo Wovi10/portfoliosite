@@ -5,7 +5,7 @@ export default function Introduction() {
     return (
         <section id="socials" className="pt-16 my-5 mx-auto pb-5">
             <div className="container flex flex-col">
-                <div className="title textleft">
+                <div className="title textcenter">
                     Hello!!
                 </div>
                 <div>

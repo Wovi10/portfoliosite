@@ -1,6 +1,6 @@
 export default function IntroductionText() {
     return(
-        <div className="textleft flex-wrap">
+        <div className="textcenter flex-wrap">
             <div className="subtitle">
                 Welcome to my very own website.
             </div>
