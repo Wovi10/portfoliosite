@@ -42,7 +42,7 @@ export default function Skills() {
                                                 <div className="ml-auto mr-0 my-auto overflow-hidden hidden md:block">
                                                     {skill.name}
                                                 </div>
-                                                <div className="md:text-6xl text-4xl icon-red">
+                                                <div className="md:text-5xl text-4xl icon-red">
                                                     {skill.icon}
                                                 </div>
                                             </div>

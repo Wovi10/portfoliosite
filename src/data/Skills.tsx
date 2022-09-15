@@ -1,5 +1,7 @@
-import {GiThink} from "react-icons/gi";
-import {IoEarOutline} from "react-icons/io5";
+import {SiFuturelearn} from "react-icons/si";
+import {FaHandsHelping, FaRegStar} from "react-icons/fa";
+import {GiSandsOfTime, GiThink} from "react-icons/gi";
+import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
 import {
     DiAngularSimple,
     DiGit, DiGoogleAnalytics,
@@ -73,22 +75,22 @@ export const softskills = [
     },
     {
         name: "Perfectionist within bounds",
-        icon: <DiPostgresql/>
+        icon: <FaRegStar/>
     },
     {
         name: "Respect deadlines",
-        icon: <DiMysql/>
+        icon: <GiSandsOfTime/>
     },
     {
         name: "Open for help",
-        icon: <DiNodejsSmall/>
+        icon: <FaHandsHelping/>
     },
     {
         name: "Want to learn",
-        icon: <DiGit/>
+        icon: <SiFuturelearn/>
     },
     {
         name: "Fast learner",
-        icon: <DiPython/>
+        icon: <IoSpeedometerOutline/>
     },
 ];
