@@ -1,4 +1,4 @@
-import {Leap_text, Ludo_text} from "./ProjectTexts";
+import {Leap_text, Ludo_text, MLX_text, Prega_text} from "./ProjectTexts";
 
 export const projectsList = [
     {
@@ -11,8 +11,22 @@ export const projectsList = [
     {
         name: "LEAP",
         link: "#",
-        date: "March-May 2020",
+        date: "March-May 2021",
         technology: "Angular TS + Java Springboot",
         description: Leap_text(),
+    },
+    {
+        name: "PREGA",
+        link: "https://github.com/Wovi10/Racing",
+        date: "October-December 2021",
+        technology: "C# + EF Core + SQL",
+        description: Prega_text(),
+    },
+    {
+        name: "TestdataAdapter",
+        link: "#",
+        date: "February-May 2022",
+        technology: "TS + PostgreSQL + Python",
+        description: MLX_text(),
     },
 ];
