@@ -19,6 +19,10 @@ export function Leap_text() {
                 <br/>
                 We had to create a business architecture making tool.
                 It had to be able to map out the business architecture in a printable and easily readable way.
+                <br/>
+                Also you had to be able to edit the map if needed. Some further details were of course also required like a login system.
+                <br/>
+                We managed all of this pretty well and learned a lot in the process.
             </div>
         </div>
     );

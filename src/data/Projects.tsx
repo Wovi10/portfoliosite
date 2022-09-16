@@ -1,8 +1,4 @@
-import IntroductionText from "./Introduction";
-import {
-    Ludo_text,
-    Leap_text
-} from "./ProjectTexts";
+import {Leap_text, Ludo_text} from "./ProjectTexts";
 
 export const projectsList = [
     {
