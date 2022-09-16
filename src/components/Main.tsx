@@ -1,4 +1,5 @@
 import {lazy} from 'react';
+const Projects = lazy(() => import ("./Projects"));
 const Introduction = lazy(() => import ("./Introduction"));
 const PortfolioTimeline = lazy(() => import ("./PortfolioTimeline"));
 const Skills = lazy(() => import ("./Skills"));
@@ -10,6 +11,7 @@ export default function Main() {
             <Introduction />
             <PortfolioTimeline />
             <Skills />
+            <Projects />
             <Socials/>
         </div>
     );

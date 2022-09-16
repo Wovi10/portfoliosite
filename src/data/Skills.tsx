@@ -16,7 +16,7 @@ import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
 import {RiTeamLine} from "react-icons/ri";
 import {SiFuturelearn} from "react-icons/si";
 
-export const hardskills = [
+export const hardskills_list = [
     {
         name: "Java, Hibernate , Spring Boot",
         icon: <DiJava/>
@@ -56,7 +56,7 @@ export const hardskills = [
 
 ];
 
-export const softskills = [
+export const softskills_list = [
     {
         name: "Team player",
         icon: <RiTeamLine/>

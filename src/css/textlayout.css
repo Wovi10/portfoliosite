@@ -21,6 +21,7 @@ div.subtitle{
     font-family: 'Rubik', sans-serif;
     font-size: larger;
     padding-top: 0.5rem;
+    color: black;
 }
 div.paragraph{
     padding-bottom: 0.5rem;

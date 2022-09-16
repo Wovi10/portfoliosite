@@ -1,4 +1,4 @@
-export const socials = [
+export const socials_list = [
     {
         name: "Wovi10",
         link: "https://github.com/Wovi10",
