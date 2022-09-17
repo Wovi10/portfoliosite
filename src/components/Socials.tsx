@@ -1,6 +1,6 @@
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {socials} from "../data/Socials";
+import {socials_list} from "../data/Socials";
 
 
 export default function Socials() {
@@ -13,7 +13,7 @@ export default function Socials() {
                 <div className="flex mx-auto md:w-1/2">
                     <div className="flex text-white rounded-3xl bg-black md:p-8 mx-2 p-4 flex-wrap">
                         <div className="flex items-center justify-center md:justify-start flex-wrap">
-                            {socials.map((social, index) => (
+                            {socials_list.map((social, index) => (
                                 <p className="p-2 w-1/2" key={index}>
                                     <div key={social.name}>
                                         <a
