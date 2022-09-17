@@ -15,7 +15,7 @@ import {Typography} from "@mui/material";
 
 export default function PortfolioTimeline() {
     return (
-        <section id="timeline" className="my-5 mx-auto ">
+        <section id="experience" className="my-5 mx-auto ">
             <div className="title">
                 My timeline so far
             </div>
