@@ -1,4 +1,4 @@
-import {Leap_text, Ludo_text, MLX_text, Prega_text} from "./ProjectTexts";
+import {Future_text, Leap_text, Ludo_text, MLX_text, PersonalSite_text, Prega_text} from "./ProjectTexts";
 
 export const projectsList = [
     {
@@ -28,5 +28,19 @@ export const projectsList = [
         date: "February-May 2022",
         technology: "TS + PostgreSQL + Python",
         description: MLX_text(),
+    },
+    {
+        name: "This site",
+        link: "https://github.com/Wovi10/portfoliosite",
+        date: "September-? 2022",
+        technology: "React + TS + TailwindCSS",
+        description: PersonalSite_text(),
+    },
+    {
+        name: "What's next?",
+        link: "https://github.com/Wovi10/",
+        date: "Future",
+        technology: "?",
+        description: Future_text(),
     },
 ];
