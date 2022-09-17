@@ -1,17 +1,53 @@
 function HomeButton() {
     return (
-        <h2 className="my-auto cursor-pointer hover:text-gray-400 font-extrabold text-2xl text-white" id="title">
+        <a className="navbutton navactive" href="#">
             Home
-        </h2>
+        </a>
+    );
+}
+
+function TimelineButton() {
+    return (
+        <a className="navbutton" href="#experience">
+            Timeline
+        </a>
+    );
+}
+
+function SkillButton() {
+    return (
+        <a className="navbutton" href="#skills">
+            Skills
+        </a>
+    );
+}
+
+function ProjectsButton() {
+    return (
+        <a className="navbutton" href="#projects">
+            Projects
+        </a>
+    );
+}
+
+function SocialsButton() {
+    return (
+        <a className="navbutton" href="#socials">
+            Socials
+        </a>
     );
 }
 
 export default function NavBar() {
     return (
         <header>
-            <nav className="w-screen flex justify-between overflow-hidden px-4 md:px-20 lg:px-36 align-middle justify-center
-            h-20 bg-black inset-0 mb-1 fixed z-40">
-                <HomeButton />
+            <nav className="w-screen flex overflow-hidden px-4 md:px-20 lg:px-36
+            h-20 bg-black inset-0 mb-1 fixed z-40 align-middle">
+                <HomeButton/>
+                <TimelineButton/>
+                <SkillButton/>
+                <ProjectsButton/>
+                <SocialsButton/>
             </nav>
         </header>
     );
