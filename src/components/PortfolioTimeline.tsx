@@ -1,17 +1,7 @@
-import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded';
-import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
-import QuestionMarkRoundedIcon from '@mui/icons-material/QuestionMarkRounded';
-import {
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineItem,
-    TimelineOppositeContent,
-    TimelineSeparator
-} from "@mui/lab";
+import {TimelineConnector, TimelineContent, TimelineItem, TimelineOppositeContent, TimelineSeparator} from "@mui/lab";
 import Timeline from '@mui/lab/Timeline';
 import {Typography} from "@mui/material";
+import {experiencesList} from "../data/Experience";
 
 export default function PortfolioTimeline() {
     return (
@@ -26,141 +16,31 @@ export default function PortfolioTimeline() {
                 resume.
             </div>
             <Timeline position="alternate">
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        align="right"
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        Future
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="grey" variant="outlined">
-                            <QuestionMarkRoundedIcon/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Your company?
-                        </Typography>
-                        <Typography>I'm always open to job offers!</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        align="right"
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        Summer 2022
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="success">
-                            <AssuredWorkloadRoundedIcon/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Graduated
-                        </Typography>
-                        <Typography>Bachelor Applied Informatics major .NET</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        align="right"
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        Feb-May 2022
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="secondary">
-                            <LaptopMacIcon/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Internship @ Melexis
-                        </Typography>
-                        <Typography>TypeScript data adapter</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        September 2019
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="primary">
-                            <AccountBalanceRoundedIcon/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Started bachelor
-                        </Typography>
-                        <Typography>Because it&apos;s awesome!</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        align="right"
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        Summer 2019
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="secondary">
-                            <LaptopMacIcon/>
-                        </TimelineDot>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Water-link
-                        </Typography>
-                        <Typography>ICT-Helpdesk</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{m: 'auto 0'}}
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        June 2019
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="success" variant="outlined">
-                            <AssuredWorkloadRoundedIcon/>
-                        </TimelineDot>
-                    </TimelineSeparator>
-                    <TimelineContent sx={{py: '12px', px: 2}}>
-                        <Typography variant="h6" component="span">
-                            Graduated
-                        </Typography>
-                        <Typography>High school diploma Information Management</Typography>
-                    </TimelineContent>
-                </TimelineItem>
+                {experiencesList.map((experience, index) =>
+                    <TimelineItem className="textleft" key={index}>
+                        <TimelineOppositeContent
+                            sx={{m: 'auto 0'}}
+                            align="right"
+                            variant="body2"
+                            color="text.secondary"
+                        >
+                            {experience.date}
+                        </TimelineOppositeContent>
+                        <TimelineSeparator>
+                            <TimelineConnector/>
+                                {experience.icon}
+                            <TimelineConnector/>
+                        </TimelineSeparator>
+                        <TimelineContent sx={{py: '12px', px: 2}}>
+                            <Typography variant="h6" component="span">
+                                <div className="ml-0 mr-auto my-auto overflow-hidden subtitle">
+                                    {experience.title}
+                                </div>
+                            </Typography>
+                            <Typography>{experience.description}</Typography>
+                        </TimelineContent>
+                    </TimelineItem>
+                )}
             </Timeline>
         </section>
     );
