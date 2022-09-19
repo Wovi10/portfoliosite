@@ -22,12 +22,13 @@ export default function PortfolioTimeline() {
             <div className="paragraph m-auto textcenter">
                 Following points on my timeline are ordered from most recent to oldest.
                 <br/>
-                Only my school and Informatics focused job experience is shown. For more detail, please download my resume.
+                Only my school and Informatics focused job experience is shown. For more detail, please download my
+                resume.
             </div>
             <Timeline position="alternate">
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         align="right"
                         variant="body2"
                         color="text.secondary"
@@ -35,13 +36,13 @@ export default function PortfolioTimeline() {
                         Future
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="grey" variant="outlined">
-                            <QuestionMarkRoundedIcon />
+                            <QuestionMarkRoundedIcon/>
                         </TimelineDot>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Your company?
                         </Typography>
@@ -50,7 +51,7 @@ export default function PortfolioTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         align="right"
                         variant="body2"
                         color="text.secondary"
@@ -58,13 +59,13 @@ export default function PortfolioTimeline() {
                         Summer 2022
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="success">
-                            <AssuredWorkloadRoundedIcon />
+                            <AssuredWorkloadRoundedIcon/>
                         </TimelineDot>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Graduated
                         </Typography>
@@ -73,7 +74,7 @@ export default function PortfolioTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         align="right"
                         variant="body2"
                         color="text.secondary"
@@ -81,13 +82,13 @@ export default function PortfolioTimeline() {
                         Feb-May 2022
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="secondary">
-                            <LaptopMacIcon />
+                            <LaptopMacIcon/>
                         </TimelineDot>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Internship @ Melexis
                         </Typography>
@@ -96,20 +97,20 @@ export default function PortfolioTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         variant="body2"
                         color="text.secondary"
                     >
                         September 2019
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="primary">
-                            <AccountBalanceRoundedIcon />
+                            <AccountBalanceRoundedIcon/>
                         </TimelineDot>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Started bachelor
                         </Typography>
@@ -118,7 +119,7 @@ export default function PortfolioTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         align="right"
                         variant="body2"
                         color="text.secondary"
@@ -126,13 +127,13 @@ export default function PortfolioTimeline() {
                         Summer 2019
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="secondary">
-                            <LaptopMacIcon />
+                            <LaptopMacIcon/>
                         </TimelineDot>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Water-link
                         </Typography>
@@ -141,19 +142,19 @@ export default function PortfolioTimeline() {
                 </TimelineItem>
                 <TimelineItem>
                     <TimelineOppositeContent
-                        sx={{ m: 'auto 0' }}
+                        sx={{m: 'auto 0'}}
                         variant="body2"
                         color="text.secondary"
                     >
                         June 2019
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                        <TimelineConnector />
+                        <TimelineConnector/>
                         <TimelineDot color="success" variant="outlined">
-                            <AssuredWorkloadRoundedIcon />
+                            <AssuredWorkloadRoundedIcon/>
                         </TimelineDot>
                     </TimelineSeparator>
-                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                    <TimelineContent sx={{py: '12px', px: 2}}>
                         <Typography variant="h6" component="span">
                             Graduated
                         </Typography>

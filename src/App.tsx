@@ -16,9 +16,9 @@ export default class App extends React.Component {
         return (
             <div className="component-app">
                 <main>
-                    <NavBar />
-                    <Main />
-                    <Footer />
+                    <NavBar/>
+                    <Main/>
+                    <Footer/>
                 </main>
             </div>
         );

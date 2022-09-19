@@ -1,4 +1,5 @@
 import {lazy} from 'react';
+
 const IntroductionText = lazy(() => import ("../data/Introduction"));
 
 export default function Introduction() {
@@ -9,7 +10,7 @@ export default function Introduction() {
                     Hello!!
                 </div>
                 <div>
-                    <IntroductionText />
+                    <IntroductionText/>
                 </div>
             </div>
         </section>

@@ -4,13 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-table.left{
+table.left {
     text-align: left;
     position: relative;
     margin-left: 0;
 }
 
-table.right{
+table.right {
     text-align: right;
     position: relative;
     margin-right: 0;

@@ -79,7 +79,8 @@ export function PersonalSite_text() {
                 Of course this page can't not be named here.
                 <br/>
                 I put a lot of effort into this site and learned so much about React.
-                For the design itself (Pure CSS) I got some help from a friend of mine 'Senne Bels'. But the rest was me searching
+                For the design itself (Pure CSS) I got some help from a friend of mine 'Senne Bels'. But the rest was me
+                searching
                 online how to do stuff.
                 <br/>
                 I think I did a decent job and this hopefully shows that I can learn pretty well and that I have

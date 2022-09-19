@@ -4,11 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
-p.copyright-text{
+p.copyright-text {
     font-size: small;
 }
 
-div.title{
+div.title {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
     font-size: xx-large;
@@ -17,23 +17,27 @@ div.title{
     text-align: center;
     padding-bottom: 2rem;
 }
-div.subtitle{
+
+div.subtitle {
     font-family: 'Rubik', sans-serif;
     font-size: larger;
     padding-top: 0.5rem;
     color: black;
 }
-div.paragraph{
+
+div.paragraph {
     padding-bottom: 0.5rem;
     /*max-width: 75%;*/
 }
 
-div.textleft{
+div.textleft {
     text-align: left;
 }
-div.textright{
+
+div.textright {
     text-align: right;
 }
-div.textcenter{
+
+div.textcenter {
     text-align: center;
 }

@@ -1,5 +1,5 @@
 export default function IntroductionText() {
-    return(
+    return (
         <div className="textcenter flex-wrap">
             <div className="subtitle">
                 Welcome to my very own website.
@@ -16,7 +16,8 @@ export default function IntroductionText() {
                 <br/>
                 In 2001 I was born in Antwerp, Belgium.
                 <br/>
-                I speak both <strong>Dutch</strong> and <strong>English</strong> fluently as well as a bit of <strong>French</strong>.
+                I speak both <strong>Dutch</strong> and <strong>English</strong> fluently as well as a bit
+                of <strong>French</strong>.
                 <br/>
                 All my live I've been sporty and a bit competitive. (No I'm not one of those people who can't lose.)
                 <br/>

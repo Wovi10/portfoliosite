@@ -1,13 +1,5 @@
 let activeElementId = "Home";
 
-function HomeButton() {
-    return (
-        <a id="Home" className="navbutton navactive" href="#" onClick={() => {addClass('Home')}}>
-            Home
-        </a>
-    );
-}
-
 function addClass(elementId: any) {
     const element = document.getElementById(elementId);
     const activeElement = document.getElementById(activeElementId);
@@ -19,9 +11,21 @@ function addClass(elementId: any) {
     return undefined;
 }
 
+function HomeButton() {
+    return (
+        <a id="Home" className="navbutton navactive" href="#" onClick={() => {
+            addClass('Home')
+        }}>
+            Home
+        </a>
+    );
+}
+
 function TimelineButton() {
     return (
-        <a id="Timeline" className="navbutton" href="#experience" onClick={() => {addClass('Timeline')}}>
+        <a id="Timeline" className="navbutton" href="#experience" onClick={() => {
+            addClass('Timeline')
+        }}>
             Timeline
         </a>
     );
@@ -29,7 +33,9 @@ function TimelineButton() {
 
 function SkillButton() {
     return (
-        <a id="Skills" className="navbutton" href="#skills" onClick={() => {addClass('Skills')}}>
+        <a id="Skills" className="navbutton" href="#skills" onClick={() => {
+            addClass('Skills')
+        }}>
             Skills
         </a>
     );
@@ -37,7 +43,9 @@ function SkillButton() {
 
 function ProjectsButton() {
     return (
-        <a id="Projects" className="navbutton" href="#projects" onClick={() => {addClass('Projects')}}>
+        <a id="Projects" className="navbutton" href="#projects" onClick={() => {
+            addClass('Projects')
+        }}>
             Projects
         </a>
     );
@@ -45,7 +53,9 @@ function ProjectsButton() {
 
 function SocialsButton() {
     return (
-        <a id="Socials" className="navbutton" href="#socials" onClick={() => {addClass('Socials')}}>
+        <a id="Socials" className="navbutton" href="#socials" onClick={() => {
+            addClass('Socials')
+        }}>
             Socials
         </a>
     );
