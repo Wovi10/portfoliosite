@@ -1,4 +1,3 @@
-import QuestionMarkRoundedIcon from "@mui/icons-material/QuestionMarkRounded";
 import {
     TimelineConnector,
     TimelineContent,
@@ -33,8 +32,8 @@ export default function Projects() {
                             </TimelineOppositeContent>
                             <TimelineSeparator>
                                 <TimelineConnector/>
-                                <TimelineDot color="grey" variant="filled">
-                                    <QuestionMarkRoundedIcon/>
+                                <TimelineDot color="grey" variant="outlined">
+                                    {project.icon}
                                 </TimelineDot>
                                 <TimelineConnector/>
                             </TimelineSeparator>
