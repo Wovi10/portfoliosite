@@ -1,14 +1,27 @@
+let activeElementId = "Home";
+
 function HomeButton() {
     return (
-        <a className="navbutton navactive" href="#">
+        <a id="Home" className="navbutton navactive" href="#" onClick={() => {addClass('Home')}}>
             Home
         </a>
     );
 }
 
+function addClass(elementId: any) {
+    const element = document.getElementById(elementId);
+    const activeElement = document.getElementById(activeElementId);
+
+    activeElement?.classList.remove('navactive');
+    element?.classList.add('navactive');
+
+    activeElementId = elementId;
+    return undefined;
+}
+
 function TimelineButton() {
     return (
-        <a className="navbutton" href="#experience">
+        <a id="Timeline" className="navbutton" href="#experience" onClick={() => {addClass('Timeline')}}>
             Timeline
         </a>
     );
@@ -16,7 +29,7 @@ function TimelineButton() {
 
 function SkillButton() {
     return (
-        <a className="navbutton" href="#skills">
+        <a id="Skills" className="navbutton" href="#skills" onClick={() => {addClass('Skills')}}>
             Skills
         </a>
     );
@@ -24,7 +37,7 @@ function SkillButton() {
 
 function ProjectsButton() {
     return (
-        <a className="navbutton" href="#projects">
+        <a id="Projects" className="navbutton" href="#projects" onClick={() => {addClass('Projects')}}>
             Projects
         </a>
     );
@@ -32,7 +45,7 @@ function ProjectsButton() {
 
 function SocialsButton() {
     return (
-        <a className="navbutton" href="#socials">
+        <a id="Socials" className="navbutton" href="#socials" onClick={() => {addClass('Socials')}}>
             Socials
         </a>
     );
