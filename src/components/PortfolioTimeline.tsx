@@ -1,11 +1,4 @@
-import {
-    TimelineConnector,
-    TimelineContent,
-    TimelineDot,
-    TimelineItem,
-    TimelineOppositeContent,
-    TimelineSeparator
-} from "@mui/lab";
+import {TimelineConnector, TimelineContent, TimelineItem, TimelineOppositeContent, TimelineSeparator} from "@mui/lab";
 import Timeline from '@mui/lab/Timeline';
 import {Typography} from "@mui/material";
 import {experiencesList} from "../data/Experience";
@@ -35,9 +28,7 @@ export default function PortfolioTimeline() {
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineConnector/>
-                            <TimelineDot color="grey" variant="outlined">
                                 {experience.icon}
-                            </TimelineDot>
                             <TimelineConnector/>
                         </TimelineSeparator>
                         <TimelineContent sx={{py: '12px', px: 2}}>

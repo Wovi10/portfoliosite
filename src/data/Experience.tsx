@@ -2,43 +2,56 @@ import AccountBalanceRoundedIcon from '@mui/icons-material/AccountBalanceRounded
 import AssuredWorkloadRoundedIcon from '@mui/icons-material/AssuredWorkloadRounded';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import QuestionMarkRoundedIcon from '@mui/icons-material/QuestionMarkRounded';
+import {TimelineDot} from "@mui/lab";
 
 export const experiencesList = [
     {
         title: "Ludo",
         date: "Future",
         description: Future_text(),
-        icon: <QuestionMarkRoundedIcon/>
+        icon: <TimelineDot color="secondary" variant="filled">
+                <QuestionMarkRoundedIcon/>
+            </TimelineDot>
     },
     {
         title: "Graduated",
         date: "Summer 2022",
         description: Bachelor_text(),
-        icon: <AssuredWorkloadRoundedIcon/>
+        icon: <TimelineDot color="success" variant="filled">
+            <AssuredWorkloadRoundedIcon/>
+        </TimelineDot>
     },
     {
         title: "Internship @ Melexis",
         date: "Feb-May 2022",
         description: Melexis_text(),
-        icon: <LaptopMacIcon/>
+        icon: <TimelineDot color="primary" variant="filled">
+            <LaptopMacIcon/>
+        </TimelineDot>
     },
     {
         title: "Started bachelor",
         date: "September 2019",
         description: BachStarted_text(),
-        icon: <AccountBalanceRoundedIcon/>
+        icon: <TimelineDot color="success" variant="outlined">
+            <AccountBalanceRoundedIcon/>
+        </TimelineDot>
     },
     {
         title: "Water-link",
         date: "Summer 2019",
         description: WaterLink_text(),
-        icon: <LaptopMacIcon/>
+        icon: <TimelineDot color="primary" variant="filled">
+            <LaptopMacIcon/>
+        </TimelineDot>
     },
     {
         title: "Graduated",
         date: "June 2019",
         description: Diploma_text(),
-        icon: <AssuredWorkloadRoundedIcon/>
+        icon: <TimelineDot color="success" variant="filled">
+            <AssuredWorkloadRoundedIcon/>
+        </TimelineDot>
     },
 ];
 
