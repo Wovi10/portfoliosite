@@ -13,7 +13,7 @@ function addClass(elementId: any) {
 
 function HomeButton() {
     return (
-        <a id="Home" className="button active" href="#" onClick={() => {
+        <a id="Home" className="active" href="#" onClick={() => {
             addClass('Home')
         }}>
             Home
@@ -23,7 +23,7 @@ function HomeButton() {
 
 function TimelineButton() {
     return (
-        <a id="Timeline" className="button" href="#experience" onClick={() => {
+        <a id="Timeline" href="#experience" onClick={() => {
             addClass('Timeline')
         }}>
             Timeline
@@ -33,7 +33,7 @@ function TimelineButton() {
 
 function SkillButton() {
     return (
-        <a id="Skills" className="button" href="#skills" onClick={() => {
+        <a id="Skills" href="#skills" onClick={() => {
             addClass('Skills')
         }}>
             Skills
@@ -43,7 +43,7 @@ function SkillButton() {
 
 function ProjectsButton() {
     return (
-        <a id="Projects" className="button" href="#projects" onClick={() => {
+        <a id="Projects" href="#projects" onClick={() => {
             addClass('Projects')
         }}>
             Projects
@@ -53,7 +53,7 @@ function ProjectsButton() {
 
 function SocialsButton() {
     return (
-        <a id="Socials" className="button" href="#socials" onClick={() => {
+        <a id="Socials" href="#socials" onClick={() => {
             addClass('Socials')
         }}>
             Socials
@@ -62,19 +62,19 @@ function SocialsButton() {
 }
 
 export default function NavBar() {
-    function myFunction() {
+    function toggleNavbar() {
         let x = document.getElementById("mobileNavLinks");
-        if (x?.style.display === "flex") {
+        if (x?.style.display === "inline-block") {
             x.style.display = "none";
         } else {
-            x!.style.display = "flex";
+            x!.style.display = "inline-block";
         }
         return undefined;
     }
 
     return (
         <header>
-            <nav className="desktop md:px-20 lg:px-36 hidden md:flex">
+            <nav id="desktopNav" className="hidden md:flex">
                 <HomeButton/>
                 <div id="desktopNavLinks">
                     <TimelineButton/>
@@ -83,10 +83,7 @@ export default function NavBar() {
                     <SocialsButton/>
                 </div>
             </nav>
-            <nav className="mobile flex md:hidden wrapper">
-                <a href="javascript:void(0);" className="button hamburger" onClick={() => myFunction()}>
-                    <i className="fa fa-bars"></i>
-                </a>
+            <nav id="mobileNav" className="inline-block md:hidden">
                 <HomeButton/>
                 <div id="mobileNavLinks">
                     <TimelineButton/>
@@ -94,6 +91,9 @@ export default function NavBar() {
                     <ProjectsButton/>
                     <SocialsButton/>
                 </div>
+                <a href="javascript:void(0);" className="hamburger block md:hidden" onClick={() => toggleNavbar()}>
+                    <i className="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
 
