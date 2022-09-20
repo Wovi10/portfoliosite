@@ -1,4 +1,4 @@
-import {lazy} from 'react';
+import {lazy, Suspense} from 'react';
 
 const Projects = lazy(() => import ("./Projects"));
 const Introduction = lazy(() => import ("./Introduction"));
@@ -9,11 +9,13 @@ const Socials = lazy(() => import ("./Socials"));
 export default function Main() {
     return (
         <div>
-            <Introduction/>
-            <PortfolioTimeline/>
-            <Skills/>
-            <Projects/>
-            <Socials/>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Introduction/>
+                <PortfolioTimeline/>
+                <Skills/>
+                <Projects/>
+                <Socials/>
+            </Suspense>
         </div>
     );
 }

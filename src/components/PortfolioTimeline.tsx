@@ -5,7 +5,7 @@ import {experiencesList} from "../data/Experience";
 
 export default function PortfolioTimeline() {
     return (
-        <section id="experience" className="my-5 mx-auto ">
+        <section id="experience">
             <div className="title">
                 My timeline so far
             </div>

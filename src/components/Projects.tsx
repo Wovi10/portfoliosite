@@ -12,7 +12,7 @@ import {projectsList} from "../data/Projects";
 
 export default function Projects() {
     return (
-        <section id="projects" className="my-5 mx-auto">
+        <section id="projects">
             <div className="container flex flex-col">
                 <div className="m-auto py-1 title">
                     My projects so far
