@@ -83,14 +83,18 @@ a.navbutton {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
 a.navbutton:hover {
     background-color: white;
     color: black;
 }
-
 a.navactive {
     background-color: #0070f3;
+}
+a p{
+    flex-shrink: 0;
+    margin-right: 1rem;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 /*endregion*/
 

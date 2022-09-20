@@ -47,11 +47,16 @@ export default function Projects() {
                                         rel="noreferrer"
                                         className="no-underline"
                                     >
-                                        <div
-                                            className="ml-0 mr-auto my-auto overflow-hidden subtitle">{project.name}</div>
+                                        <div className="ml-0 mr-auto my-auto overflow-hidden subtitle">
+                                            {project.name}
+                                        </div>
                                     </a>
                                 </Typography>
-                                <Typography>{project.description}</Typography>
+                                <Typography>
+                                    <div className="flex-wrap">
+                                            {project.description}
+                                    </div>
+                                </Typography>
                             </TimelineContent>
                         </TimelineItem>
                     )}

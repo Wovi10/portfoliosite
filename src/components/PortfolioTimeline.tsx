@@ -37,7 +37,13 @@ export default function PortfolioTimeline() {
                                     {experience.title}
                                 </div>
                             </Typography>
-                            <Typography>{experience.description}</Typography>
+                            <Typography>
+                                <div className="flex-wrap">
+                                    <div className="paragraph">
+                                        {experience.description}
+                                    </div>
+                                </div>
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                 )}
