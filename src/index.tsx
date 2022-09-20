@@ -1,19 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './css/index.css';
-import './css/App.css';
-import './css/textlayout.css'
-import './css/tables.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
+import React, {lazy, Suspense} from 'react';
+import ReactDOM from 'react-dom/client';
+import './css/App.css';
 import reportWebVitals from './reportWebVitals';
+
+const App = lazy(() => import ("./App"));
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <App/>
+    <Suspense fallback={<div>Loading...</div>}>
+        <App/>
+    </Suspense>
 );
 
 // If you want to start measuring performance in your app, pass a function

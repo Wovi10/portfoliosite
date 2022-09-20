@@ -1,12 +1,10 @@
-import {lazy} from 'react';
-
-const CopyrightComponent = lazy(() => import("../data/Copyright"));
-
 export default function Footer() {
     return (
-        <footer className="w-screen bg-black text-white absolute h-auto py-5">
-            <div className="flex absolute left-1/2">
-                <CopyrightComponent/>
+        <footer>
+            <div>
+                <p>
+                    © 2022 Wout Vinckevleugel. All Rights Reserved.
+                </p>
             </div>
         </footer>
     );

@@ -5,7 +5,7 @@ import {experiencesList} from "../data/Experience";
 
 export default function PortfolioTimeline() {
     return (
-        <section id="experience" className="my-5 mx-auto ">
+        <section id="experience">
             <div className="title">
                 My timeline so far
             </div>
@@ -37,7 +37,13 @@ export default function PortfolioTimeline() {
                                     {experience.title}
                                 </div>
                             </Typography>
-                            <Typography>{experience.description}</Typography>
+                            <Typography>
+                                <div className="flex-wrap">
+                                    <div className="paragraph">
+                                        {experience.description}
+                                    </div>
+                                </div>
+                            </Typography>
                         </TimelineContent>
                     </TimelineItem>
                 )}

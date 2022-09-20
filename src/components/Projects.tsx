@@ -12,7 +12,7 @@ import {projectsList} from "../data/Projects";
 
 export default function Projects() {
     return (
-        <section id="projects" className="my-5 mx-auto">
+        <section id="projects">
             <div className="container flex flex-col">
                 <div className="m-auto py-1 title">
                     My projects so far
@@ -45,13 +45,18 @@ export default function Projects() {
                                         href={project.link}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="no-underline"
+                                        className="underline"
                                     >
-                                        <div
-                                            className="ml-0 mr-auto my-auto overflow-hidden subtitle">{project.name}</div>
+                                        <div className="ml-0 mr-auto my-auto overflow-hidden subtitle">
+                                            {project.name}
+                                        </div>
                                     </a>
                                 </Typography>
-                                <Typography>{project.description}</Typography>
+                                <Typography>
+                                    <div className="flex-wrap">
+                                            {project.description}
+                                    </div>
+                                </Typography>
                             </TimelineContent>
                         </TimelineItem>
                     )}

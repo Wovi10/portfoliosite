@@ -4,8 +4,8 @@ function addClass(elementId: any) {
     const element = document.getElementById(elementId);
     const activeElement = document.getElementById(activeElementId);
 
-    activeElement?.classList.remove('navactive');
-    element?.classList.add('navactive');
+    activeElement?.classList.remove('active');
+    element?.classList.add('active');
 
     activeElementId = elementId;
     return undefined;
@@ -13,7 +13,7 @@ function addClass(elementId: any) {
 
 function HomeButton() {
     return (
-        <a id="Home" className="navbutton navactive" href="#" onClick={() => {
+        <a id="Home" className="active" href="#" onClick={() => {
             addClass('Home')
         }}>
             Home
@@ -23,7 +23,7 @@ function HomeButton() {
 
 function TimelineButton() {
     return (
-        <a id="Timeline" className="navbutton" href="#experience" onClick={() => {
+        <a id="Timeline" href="#experience" onClick={() => {
             addClass('Timeline')
         }}>
             Timeline
@@ -33,7 +33,7 @@ function TimelineButton() {
 
 function SkillButton() {
     return (
-        <a id="Skills" className="navbutton" href="#skills" onClick={() => {
+        <a id="Skills" href="#skills" onClick={() => {
             addClass('Skills')
         }}>
             Skills
@@ -43,7 +43,7 @@ function SkillButton() {
 
 function ProjectsButton() {
     return (
-        <a id="Projects" className="navbutton" href="#projects" onClick={() => {
+        <a id="Projects" href="#projects" onClick={() => {
             addClass('Projects')
         }}>
             Projects
@@ -53,7 +53,7 @@ function ProjectsButton() {
 
 function SocialsButton() {
     return (
-        <a id="Socials" className="navbutton" href="#socials" onClick={() => {
+        <a id="Socials" href="#socials" onClick={() => {
             addClass('Socials')
         }}>
             Socials
@@ -62,16 +62,40 @@ function SocialsButton() {
 }
 
 export default function NavBar() {
+    function toggleNavbar() {
+        let x = document.getElementById("mobileNavLinks");
+        if (x?.style.display === "inline-block") {
+            x.style.display = "none";
+        } else {
+            x!.style.display = "inline-block";
+        }
+        return undefined;
+    }
+
     return (
         <header>
-            <nav className="w-screen flex overflow-hidden px-4 md:px-20 lg:px-36
-            h-20 bg-black inset-0 mb-1 fixed z-40 align-middle">
+            <nav id="desktopNav" className="hidden md:flex">
                 <HomeButton/>
-                <TimelineButton/>
-                <SkillButton/>
-                <ProjectsButton/>
-                <SocialsButton/>
+                <div id="desktopNavLinks">
+                    <TimelineButton/>
+                    <SkillButton/>
+                    <ProjectsButton/>
+                    <SocialsButton/>
+                </div>
+            </nav>
+            <nav id="mobileNav" className="inline-block md:hidden">
+                <HomeButton/>
+                <div id="mobileNavLinks">
+                    <TimelineButton/>
+                    <SkillButton/>
+                    <ProjectsButton/>
+                    <SocialsButton/>
+                </div>
+                <a href="javascript:void(0);" className="hamburger block md:hidden" onClick={() => toggleNavbar()}>
+                    <i className="fa fa-bars"></i>
+                </a>
             </nav>
         </header>
+
     );
 }

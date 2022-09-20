@@ -8,7 +8,7 @@ export const experiencesList = [
     {
         title: "Ludo",
         date: "Future",
-        description: Future_text(),
+        description: "I'm always open to job offers!",
         icon: <TimelineDot color="secondary" variant="filled">
                 <QuestionMarkRoundedIcon/>
             </TimelineDot>
@@ -16,7 +16,7 @@ export const experiencesList = [
     {
         title: "Graduated",
         date: "Summer 2022",
-        description: Bachelor_text(),
+        description: "Bachelor Applied Informatics major .NET",
         icon: <TimelineDot color="success" variant="filled">
             <AssuredWorkloadRoundedIcon/>
         </TimelineDot>
@@ -24,7 +24,7 @@ export const experiencesList = [
     {
         title: "Internship @ Melexis",
         date: "Feb-May 2022",
-        description: Melexis_text(),
+        description: "TypeScript data adapter",
         icon: <TimelineDot color="primary" variant="filled">
             <LaptopMacIcon/>
         </TimelineDot>
@@ -32,7 +32,7 @@ export const experiencesList = [
     {
         title: "Started bachelor",
         date: "September 2019",
-        description: BachStarted_text(),
+        description: "Because it&apos;s awesome!",
         icon: <TimelineDot color="success" variant="outlined">
             <AccountBalanceRoundedIcon/>
         </TimelineDot>
@@ -40,7 +40,7 @@ export const experiencesList = [
     {
         title: "Water-link",
         date: "Summer 2019",
-        description: WaterLink_text(),
+        description: "ICT-Helpdesk",
         icon: <TimelineDot color="primary" variant="filled">
             <LaptopMacIcon/>
         </TimelineDot>
@@ -48,69 +48,9 @@ export const experiencesList = [
     {
         title: "Graduated",
         date: "June 2019",
-        description: Diploma_text(),
+        description: "High school diploma Information Management",
         icon: <TimelineDot color="success" variant="filled">
             <AssuredWorkloadRoundedIcon/>
         </TimelineDot>
     },
 ];
-
-function Future_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                I'm always open to job offers!
-            </div>
-        </div>
-    );
-}
-
-function Bachelor_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                Bachelor Applied Informatics major .NET
-            </div>
-        </div>
-    );
-}
-
-function Melexis_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                TypeScript data adapter
-            </div>
-        </div>
-    );
-}
-
-function BachStarted_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                Because it&apos;s awesome!
-            </div>
-        </div>
-    );
-}
-
-function WaterLink_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                ICT-Helpdesk
-            </div>
-        </div>
-    );
-}
-
-function Diploma_text() {
-    return (
-        <div className="flex-wrap">
-            <div className="paragraph">
-                High school diploma Information Management
-            </div>
-        </div>
-    );
-}

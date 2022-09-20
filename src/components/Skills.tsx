@@ -2,7 +2,7 @@ import {hardskills_list, softskills_list} from "../data/Skills";
 
 export default function Skills() {
     return (
-        <section id="skills" className="my-5 mx-auto">
+        <section id="skills">
             <div className="container flex flex-col">
                 <div className="m-auto py-1 title">
                     My skills
