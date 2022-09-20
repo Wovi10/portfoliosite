@@ -24,7 +24,7 @@ export default function Socials() {
                                             rel="noreferrer"
                                             className="rounded flex no-underline hover:underline font-thin text-sm md:text-md"
                                         >
-                                            <i className={`${social.icon} mx-4`}></i>
+                                            <i className={`${social.icon} mx-4 icon-blue`}></i>
                                             <p className="hidden md:block">{social.name}</p>
                                             <p className="block md:hidden">{social.mobile}</p>
                                         </a>

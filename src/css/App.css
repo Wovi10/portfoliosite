@@ -96,6 +96,15 @@ a p{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+#socials i{
+    color: #0070f3;
+}
+a.icon{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
 /*endregion*/
 
 /*region table tags*/
@@ -139,5 +148,35 @@ footer p {
 /*region ids*/
 #introduction{
     padding-top: 5rem;
+}
+/*endregion*/
+
+/*region nav tags*/
+nav{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 0.25rem;
+    height: 5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    vertical-align: middle;
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+.navmobile:hover{
+    background-color: black;
+    color: white;
 }
 /*endregion*/

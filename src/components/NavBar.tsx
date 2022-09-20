@@ -62,16 +62,38 @@ function SocialsButton() {
 }
 
 export default function NavBar() {
+    function myFunction() {
+        let x = document.getElementById("mobileNavLinks");
+        if (x?.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x!.style.display = "block";
+        }
+        return undefined;
+    }
+
     return (
         <header>
-            <nav className="w-screen flex overflow-hidden px-4 md:px-20 lg:px-36
-            h-20 bg-black inset-0 mb-1 fixed z-40 align-middle">
+            <nav className="navdesktop md:px-20 lg:px-36 hidden md:flex">
                 <HomeButton/>
                 <TimelineButton/>
                 <SkillButton/>
                 <ProjectsButton/>
                 <SocialsButton/>
             </nav>
+            <nav className="navmobile flex md:hidden">
+                <div id="mobileNavLinks">
+                    <HomeButton/>
+                    <TimelineButton/>
+                    <SkillButton/>
+                    <ProjectsButton/>
+                    <SocialsButton/>
+                </div>
+                <a href="javascript:void(0);" className="navbutton" onClick={() => myFunction()}>
+                    <i className="fa fa-bars"></i>
+                </a>
+            </nav>
         </header>
+
     );
 }
