@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     text-decoration: none;
 }
 
@@ -37,69 +37,58 @@ div.title {
     padding-bottom: 2rem;
     line-height: 1.15;
 }
+
 div.subtitle {
     font-family: 'Rubik', sans-serif;
     font-size: larger;
     padding-top: 0.5rem;
     color: black;
 }
+
 div.paragraph {
     padding-bottom: 0.5rem;
     /*max-width: 75%;*/
 }
+
 div.textleft {
     text-align: left;
 }
+
 div.textright {
     text-align: right;
 }
+
 div.textcenter {
     text-align: center;
 }
+
 div.icon-blue {
     color: #0070f3;
 }
+
 div.icon-red {
     color: #ff0000;
 }
+
 /*endregion*/
 
 /*region a tags*/
 a {
     color: inherit;
 }
-a.navbutton {
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-    cursor: pointer;
-    font-size: 1.5rem;
-    line-height: 4rem;
-    font-weight: 800;
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-    text-decoration: none;
-    display: inline;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-a.navbutton:hover {
-    background-color: white;
-    color: black;
-}
-a.navactive {
-    background-color: #0070f3;
-}
-a p{
+
+a p {
     flex-shrink: 0;
     margin-right: 1rem;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-#socials i{
+
+#socials i {
     color: #0070f3;
 }
-a.icon{
+
+a.icon {
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -113,11 +102,13 @@ table.left {
     position: relative;
     margin-left: 0;
 }
+
 table.right {
     text-align: right;
     position: relative;
     margin-right: 0;
 }
+
 /*endregion*/
 
 /*region footer tags*/
@@ -136,9 +127,11 @@ footer {
     color: rgb(255 255 255 / var(--tw-text-opacity));
     position: absolute;
 }
+
 footer p {
     font-size: small;
 }
+
 /*endregion*/
 
 .container {
@@ -146,13 +139,14 @@ footer p {
 }
 
 /*region ids*/
-#introduction{
+#introduction {
     padding-top: 5rem;
 }
+
 /*endregion*/
 
 /*region nav tags*/
-nav{
+nav {
     overflow-y: hidden;
     overflow-x: scroll;
     width: 100vw;
@@ -172,11 +166,62 @@ nav{
     z-index: 40;
     vertical-align: middle;
 }
-nav::-webkit-scrollbar{
+
+nav .button {
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    font-weight: 800;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav::-webkit-scrollbar {
     display: none;
 }
-.navmobile:hover{
+
+nav .button:hover {
+    background-color: white;
+    color: black;
+}
+
+nav .active {
+    background-color: #0070f3;
+}
+
+nav #desktopNavLinks .button {
+    display: inline-flex;
+}
+nav #mobileNavLinks .button {
+    display: flex;
+}
+
+nav .mobile {
     background-color: black;
     color: white;
+}
+
+nav .mobile:hover {
+    background-color: black;
+    color: white;
+}
+nav .hamburger{
+    float: right;
+}
+nav .hamburger:hover{
+    background-color: black;
+    color: white;
+}
+nav #wrapper{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 /*endregion*/

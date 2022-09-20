@@ -4,8 +4,8 @@ function addClass(elementId: any) {
     const element = document.getElementById(elementId);
     const activeElement = document.getElementById(activeElementId);
 
-    activeElement?.classList.remove('navactive');
-    element?.classList.add('navactive');
+    activeElement?.classList.remove('active');
+    element?.classList.add('active');
 
     activeElementId = elementId;
     return undefined;
@@ -13,7 +13,7 @@ function addClass(elementId: any) {
 
 function HomeButton() {
     return (
-        <a id="Home" className="navbutton navactive" href="#" onClick={() => {
+        <a id="Home" className="button active" href="#" onClick={() => {
             addClass('Home')
         }}>
             Home
@@ -23,7 +23,7 @@ function HomeButton() {
 
 function TimelineButton() {
     return (
-        <a id="Timeline" className="navbutton" href="#experience" onClick={() => {
+        <a id="Timeline" className="button" href="#experience" onClick={() => {
             addClass('Timeline')
         }}>
             Timeline
@@ -33,7 +33,7 @@ function TimelineButton() {
 
 function SkillButton() {
     return (
-        <a id="Skills" className="navbutton" href="#skills" onClick={() => {
+        <a id="Skills" className="button" href="#skills" onClick={() => {
             addClass('Skills')
         }}>
             Skills
@@ -43,7 +43,7 @@ function SkillButton() {
 
 function ProjectsButton() {
     return (
-        <a id="Projects" className="navbutton" href="#projects" onClick={() => {
+        <a id="Projects" className="button" href="#projects" onClick={() => {
             addClass('Projects')
         }}>
             Projects
@@ -53,7 +53,7 @@ function ProjectsButton() {
 
 function SocialsButton() {
     return (
-        <a id="Socials" className="navbutton" href="#socials" onClick={() => {
+        <a id="Socials" className="button" href="#socials" onClick={() => {
             addClass('Socials')
         }}>
             Socials
@@ -64,34 +64,36 @@ function SocialsButton() {
 export default function NavBar() {
     function myFunction() {
         let x = document.getElementById("mobileNavLinks");
-        if (x?.style.display === "block") {
+        if (x?.style.display === "flex") {
             x.style.display = "none";
         } else {
-            x!.style.display = "block";
+            x!.style.display = "flex";
         }
         return undefined;
     }
 
     return (
         <header>
-            <nav className="navdesktop md:px-20 lg:px-36 hidden md:flex">
+            <nav className="desktop md:px-20 lg:px-36 hidden md:flex">
                 <HomeButton/>
-                <TimelineButton/>
-                <SkillButton/>
-                <ProjectsButton/>
-                <SocialsButton/>
-            </nav>
-            <nav className="navmobile flex md:hidden">
-                <div id="mobileNavLinks">
-                    <HomeButton/>
+                <div id="desktopNavLinks">
                     <TimelineButton/>
                     <SkillButton/>
                     <ProjectsButton/>
                     <SocialsButton/>
                 </div>
-                <a href="javascript:void(0);" className="navbutton" onClick={() => myFunction()}>
+            </nav>
+            <nav className="mobile flex md:hidden wrapper">
+                <a href="javascript:void(0);" className="button hamburger" onClick={() => myFunction()}>
                     <i className="fa fa-bars"></i>
                 </a>
+                <HomeButton/>
+                <div id="mobileNavLinks">
+                    <TimelineButton/>
+                    <SkillButton/>
+                    <ProjectsButton/>
+                    <SocialsButton/>
+                </div>
             </nav>
         </header>
 
