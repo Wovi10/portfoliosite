@@ -45,7 +45,7 @@ export default function Projects() {
                                         href={project.link}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="no-underline"
+                                        className="underline"
                                     >
                                         <div className="ml-0 mr-auto my-auto overflow-hidden subtitle">
                                             {project.name}
