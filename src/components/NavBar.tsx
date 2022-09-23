@@ -1,3 +1,7 @@
+import {lazy, Suspense} from 'react';
+
+const DownloadLink = lazy(() => import ("./DownloadLink"));
+
 let activeElementId = "Home";
 
 function addClass(elementId: any) {
@@ -76,12 +80,13 @@ export default function NavBar() {
         <header>
             <nav id="desktopNav" className="hidden md:flex">
                 <HomeButton/>
-                <div id="desktopNavLinks">
-                    <TimelineButton/>
-                    <SkillButton/>
-                    <ProjectsButton/>
-                    <SocialsButton/>
-                </div>
+                <TimelineButton/>
+                <SkillButton/>
+                <ProjectsButton/>
+                <SocialsButton/>
+                <Suspense fallback={<div>Loading...</div>}>
+                    <DownloadLink />
+                </Suspense>
             </nav>
             <nav id="mobileNav" className="inline-block md:hidden">
                 <HomeButton/>
@@ -91,6 +96,7 @@ export default function NavBar() {
                     <ProjectsButton/>
                     <SocialsButton/>
                 </div>
+                <DownloadLink />
                 <a href="javascript:void(0);" className="hamburger block md:hidden" onClick={() => toggleNavbar()}>
                     <i className="fa fa-bars"></i>
                 </a>
