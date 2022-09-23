@@ -94,6 +94,7 @@ export default function NavBar() {
                     <ProjectsButton/>
                     <SocialsButton/>
                 </div>
+                <DownloadLink />
                 <a href="javascript:void(0);" className="hamburger block md:hidden" onClick={() => toggleNavbar()}>
                     <i className="fa fa-bars"></i>
                 </a>

@@ -180,13 +180,22 @@ nav .active {
     background-color: #0070f3;
 }
 
+nav #downloadLink{
+    position: fixed;
+    text-align: center;
+    right: 25%;
+    top: 0;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 nav#desktopNav a:hover {
     background-color: white;
     color: black;
 }
 
 nav#desktopNav #desktopNavLinks a {
-    display: inline-flex;
+    display: inline;
 }
 
 nav#mobileNav a{
@@ -213,5 +222,6 @@ nav#mobileNav .hamburger {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
 
 /*endregion*/
