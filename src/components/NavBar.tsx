@@ -1,4 +1,6 @@
-import DownloadLink from "./DownloadLink";
+import {lazy, Suspense} from 'react';
+
+const DownloadLink = lazy(() => import ("./DownloadLink"));
 
 let activeElementId = "Home";
 
@@ -82,7 +84,9 @@ export default function NavBar() {
                 <SkillButton/>
                 <ProjectsButton/>
                 <SocialsButton/>
-                <DownloadLink />
+                <Suspense fallback={<div>Loading...</div>}>
+                    <DownloadLink />
+                </Suspense>
             </nav>
             <nav id="mobileNav" className="inline-block md:hidden">
                 <HomeButton/>

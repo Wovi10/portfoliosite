@@ -1,3 +1,7 @@
+import {lazy, Suspense} from 'react';
+
+const DownloadLink = lazy(() => import ("./DownloadLink"));
+
 export default function Introduction() {
     return (
         <section id="introduction">
@@ -41,6 +45,11 @@ export default function Introduction() {
                         <br/>
                         This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
                         But more about that in my study section.
+                    </div>
+                    <div className="subtitle">
+                        <Suspense>
+                            <DownloadLink/>
+                        </Suspense>
                     </div>
                 </div>
             </div>
