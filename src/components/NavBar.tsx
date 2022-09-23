@@ -1,3 +1,5 @@
+import DownloadLink from "./DownloadLink";
+
 let activeElementId = "Home";
 
 function addClass(elementId: any) {
@@ -82,6 +84,7 @@ export default function NavBar() {
                     <ProjectsButton/>
                     <SocialsButton/>
                 </div>
+                <DownloadLink />
             </nav>
             <nav id="mobileNav" className="inline-block md:hidden">
                 <HomeButton/>
