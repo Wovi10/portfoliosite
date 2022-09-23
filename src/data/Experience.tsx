@@ -6,7 +6,7 @@ import {TimelineDot} from "@mui/lab";
 
 export const experiencesList = [
     {
-        title: "Ludo",
+        title: "Future",
         date: "Future",
         description: "I'm always open to job offers!",
         icon: <TimelineDot color="secondary" variant="filled">
@@ -32,7 +32,7 @@ export const experiencesList = [
     {
         title: "Started bachelor",
         date: "September 2019",
-        description: "Because it&apos;s awesome!",
+        description: "Because it's awesome!",
         icon: <TimelineDot color="success" variant="outlined">
             <AccountBalanceRoundedIcon/>
         </TimelineDot>

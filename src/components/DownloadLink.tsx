@@ -1,9 +1,6 @@
 function downloadResume() {
     const element = document.createElement("a");
-    // const file = new Blob([document.getElementById("input").value], {
-    //     type: "text/plain;charset=utf-8}"
-    // });
-    element.href = "../data/files/resume_WoutVinckevleugel.docx";
+    element.href = "/files/resume_WoutVinckevleugel.docx";
     element.download = "resume_WoutVinckevleugel.docx";
     element.click();
 }
