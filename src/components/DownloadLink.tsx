@@ -4,7 +4,7 @@ function downloadResume() {
     //     type: "text/plain;charset=utf-8}"
     // });
     element.href = "../data/files/resume_WoutVinckevleugel.docx";
-    element.download = "resume_WoutVinckevleugel.csv";
+    element.download = "resume_WoutVinckevleugel.docx";
     element.click();
 }
 

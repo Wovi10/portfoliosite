@@ -182,11 +182,17 @@ nav .active {
 
 nav #downloadLink{
     position: fixed;
-    text-align: center;
-    right: 25%;
     top: 0;
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+nav#desktopNav #downloadLink{
+    right: 0;
+}
+
+nav#mobileNav #downloadLink{
+    right: 25%;
 }
 
 nav#desktopNav a:hover {
