@@ -114,22 +114,30 @@ table.right {
 /*region footer tags*/
 footer {
     display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 100vw;
     height: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-    position: absolute;
+    font-size: small;
+    line-height: 4rem;
+}
+footer p{
+    display: inline-flex;
+    float: right;
 }
 
-footer p {
-    font-size: small;
+footer #downloadLink {
+    display: inline-flex;
+    float: left;
+    text-decoration: underline;
 }
 
 /*endregion*/
@@ -195,13 +203,13 @@ nav#mobileNav #downloadLink{
     right: 25%;
 }
 
+nav#desktopNav a{
+    display: inline-flex;
+}
+
 nav#desktopNav a:hover {
     background-color: white;
     color: black;
-}
-
-nav#desktopNav a{
-    display: inline-flex;
 }
 
 nav#mobileNav a{

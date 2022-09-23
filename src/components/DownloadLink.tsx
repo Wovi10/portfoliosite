@@ -7,7 +7,7 @@ function downloadResume() {
 
 export default function DownloadLink() {
     return (
-            <div className="container flex flex-col">
+            <div>
                 <a id="downloadLink" href="javascript:void(0)" onClick={() => downloadResume()}>Download CV</a>
             </div>
     )
