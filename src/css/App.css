@@ -164,7 +164,7 @@ nav {
     z-index: 40;
 }
 
-nav a {
+nav a{
     margin: auto 0;
     padding: 0 1rem;
     cursor: pointer;
@@ -200,8 +200,8 @@ nav#desktopNav a:hover {
     color: black;
 }
 
-nav#desktopNav #desktopNavLinks a {
-    display: inline;
+nav#desktopNav a{
+    display: inline-flex;
 }
 
 nav#mobileNav a{

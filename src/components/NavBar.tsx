@@ -78,12 +78,10 @@ export default function NavBar() {
         <header>
             <nav id="desktopNav" className="hidden md:flex">
                 <HomeButton/>
-                <div id="desktopNavLinks">
-                    <TimelineButton/>
-                    <SkillButton/>
-                    <ProjectsButton/>
-                    <SocialsButton/>
-                </div>
+                <TimelineButton/>
+                <SkillButton/>
+                <ProjectsButton/>
+                <SocialsButton/>
                 <DownloadLink />
             </nav>
             <nav id="mobileNav" className="inline-block md:hidden">
