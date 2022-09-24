@@ -28,7 +28,7 @@ export default function Introduction() {
                         I speak both <strong>Dutch</strong> and <strong>English</strong> fluently as well as a bit
                         of <strong>French</strong>.
                         <br/>
-                        All my live I've been sporty and a bit competitive. (No I'm not one of those people who can't lose.)
+                        All my life I've been sporty and a bit competitive. (No I'm not one of those people who can't lose.)
                         <br/>
                         Taking the lead is not a problem, although I prefer being led if possible.
                     </div>
