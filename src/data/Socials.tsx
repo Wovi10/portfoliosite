@@ -7,8 +7,8 @@ export const socials_list = [
         mobile: "",
     },
     {
-        name: "wout_vinckevleugel",
-        link: "https://www.instagram.com/wout_vinckevleugel/",
+        name: "wovi10",
+        link: "https://www.instagram.com/wovi10/",
         icon: "bi bi-instagram",
         hovertext: "Instagram",
         mobile: "",

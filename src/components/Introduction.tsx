@@ -46,7 +46,7 @@ export default function Introduction() {
                         This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
                         But more about that in my study section.
                     </div>
-                    <div className="subtitle">
+                    <div className="subtitle underline">
                         <Suspense>
                             <DownloadLink/>
                         </Suspense>
