@@ -1,7 +1,9 @@
 import QuestionMarkRoundedIcon from "@mui/icons-material/QuestionMarkRounded";
 import CircleIcon from '@mui/icons-material/Circle';
 
-export const projectsList = [
+export let projectsList: ({ date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: any; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string })[];
+
+projectsList = [
     {
         name: "Ludo",
         link: "https://github.com/Wovi10/MensErgerJeNiet",
@@ -40,6 +42,14 @@ export const projectsList = [
         date: "September-? 2022",
         technology: "React + TS + TailwindCSS",
         description: PersonalSite_text(),
+        icon: <CircleIcon/>
+    },
+    {
+        name: "Java Calculator",
+        link: "https://github.com/Wovi10/Calculator",
+        date: "October 2022",
+        technology: "Java Swing",
+        description: Calculator_text(),
         icon: <CircleIcon/>
     },
     {
@@ -132,6 +142,17 @@ function PersonalSite_text() {
             interest in what I do.
             <br/>
             Of course the source code is available on my GitHub.
+        </div>
+    );
+}
+
+function Calculator_text() {
+    return (
+        <div className="paragraph">
+            I wanted to get some more Java Swing experience.
+            What better way to do that than starting simple and doing some self study?
+            <br/>
+            A simple calculator on which I can expand whenever I feel like it. Sounds good to me!
         </div>
     );
 }
