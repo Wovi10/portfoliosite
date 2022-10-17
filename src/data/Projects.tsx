@@ -53,6 +53,14 @@ projectsList = [
         icon: <CircleIcon/>
     },
     {
+        name: "Java Currency converter",
+        link: "https://github.com/Wovi10/ValutaConverter",
+        date: "October 2022",
+        technology: "JavaFX",
+        description: Currency_text(),
+        icon: <CircleIcon/>
+    },
+    {
         name: "What's next?",
         link: "https://github.com/Wovi10/",
         date: "Future",
@@ -153,6 +161,18 @@ function Calculator_text() {
             What better way to do that than starting simple and doing some self study?
             <br/>
             A simple calculator on which I can expand whenever I feel like it. Sounds good to me!
+        </div>
+    );
+}
+
+function Currency_text() {
+    return (
+        <div className="paragraph">
+            On to some JavaFX.
+            This very simple program allows you to convert an amount of money from Euro, AUD or USD to any of the other.
+            <br/>
+            Some ways to expand later on include: API calls to get accurate exchange values; nicer design; more
+            currencies.
         </div>
     );
 }
