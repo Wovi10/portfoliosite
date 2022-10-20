@@ -61,6 +61,14 @@ projectsList = [
         icon: <CircleIcon/>
     },
     {
+        name: "Java Checklist",
+        link: "https://github.com/Wovi10/Checklist",
+        date: "October 2022",
+        technology: "JavaFX",
+        description: Checklist_text(),
+        icon: <CircleIcon/>
+    },
+    {
         name: "What's next?",
         link: "https://github.com/Wovi10/",
         date: "Future",
@@ -173,6 +181,18 @@ function Currency_text() {
             <br/>
             Some ways to expand later on include: API calls to get accurate exchange values; nicer design; more
             currencies.
+        </div>
+    );
+}
+
+function Checklist_text() {
+    return (
+        <div className="paragraph">
+            This being the third project I began this month, I will make it more complicated and detailed.
+            <br/>
+            My goal is to create an app I will actually use myself. Adding items to a checklist, completing them,
+            clearing items. Afterwards saving everything to use it next time.
+            Let's have some fun and make this work!
         </div>
     );
 }
