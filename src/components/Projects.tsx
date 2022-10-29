@@ -15,8 +15,9 @@ export default function Projects() {
         <section id="projects">
             <div className="container flex flex-col">
                 <div className="m-auto py-1 title">
-                    My projects so far. If you have any remarks to my code, just leave a comment on the GitHub repo!
+                    My projects so far.
                 </div>
+                <div className="m-auto py-1">If you have any remarks to my code, just leave a comment on the GitHub repo!</div>
                 <Timeline position="alternate">
                     {projectsList.map((project, index) =>
                         <TimelineItem className="textleft" key={index}>

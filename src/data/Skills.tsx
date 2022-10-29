@@ -18,7 +18,7 @@ import {SiFuturelearn} from "react-icons/si";
 
 export const hardskills_list = [
     {
-        name: "Java, Hibernate , Spring Boot",
+        name: "Java, Spring Boot, Kotlin",
         icon: <DiJava/>
     },
     {
