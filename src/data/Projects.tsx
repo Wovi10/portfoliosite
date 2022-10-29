@@ -69,6 +69,14 @@ projectsList = [
         icon: <CircleIcon/>
     },
     {
+        name: "Learning Kotlin",
+        link: "https://github.com/Wovi10/Learning_Kotlin",
+        date: "End 2022",
+        technology: "Kotlin",
+        description: Kotlin_text(),
+        icon: <CircleIcon/>
+    },
+    {
         name: "What's next?",
         link: "https://github.com/Wovi10/",
         date: "Future",
@@ -193,6 +201,18 @@ function Checklist_text() {
             My goal is to create an app I will actually use myself. Adding items to a checklist, completing them,
             clearing items. Afterwards saving everything to use it next time.
             Let's have some fun and make this work!
+        </div>
+    );
+}
+
+function Kotlin_text() {
+    return (
+        <div className="paragraph">
+            As a devoted programmer I try to keep up with up and coming languages.
+            <br/>
+            Kotlin is one of these languages. I got to know it during my internship at Melexis and wanted to get to know
+            it better.
+            I will keep up with this throughout the next months.
         </div>
     );
 }
