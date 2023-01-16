@@ -1,7 +1,7 @@
 function downloadResume() {
     const element = document.createElement("a");
-    element.href = "/files/resume_WoutVinckevleugel.docx";
-    element.download = "resume_WoutVinckevleugel.docx";
+    element.href = "/files/CV_VinckevleugelWout_English.pdf";
+    element.download = "CV_WoutVinckevleugel.pdf";
     element.click();
 }
 
