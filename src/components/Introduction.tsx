@@ -36,7 +36,7 @@ export default function Introduction() {
                         Why IT?
                     </div>
                     <div className="paragraph">
-                        My fifth year in Secondary school (2017) was when I chose to go into IT.
+                        My fifth year in Secondary school (2017), I chose to go into IT.
                         <br/>
                         It was a logical choice because my dad has always been an ITer.
                         <br/>
