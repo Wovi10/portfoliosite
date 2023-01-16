@@ -44,7 +44,8 @@ export default function Introduction() {
                         I changed from sciences to <strong>IT management</strong>.
                         <br/>
                         This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
-                        But more about that in my study section.
+						<br />
+						As you can see in my <a href="#experience" className='underline'>timeline</a>, I am now looking for my next opportunity.
                     </div>
                     <div className="subtitle underline">
                         <Suspense>

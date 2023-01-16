@@ -17,6 +17,7 @@ export default function Projects() {
                 <div className="m-auto py-1 title">
                     My projects so far.
                 </div>
+                <div className="m-auto py-1">Nearly all titles are clickable.</div>
                 <div className="m-auto py-1">If you have any remarks to my code, just leave a comment on the GitHub repo!</div>
                 <Timeline position="alternate">
                     {projectsList.map((project, index) =>
