@@ -1,5 +1,6 @@
 import {
     DiAngularSimple,
+    DiDotnet,
     DiGithubBadge,
     DiGoogleAnalytics,
     DiJava,
@@ -18,8 +19,8 @@ import {SiFuturelearn} from "react-icons/si";
 
 export const hardskills_list = [
     {
-        name: "Java, Spring Boot, Kotlin",
-        icon: <DiJava/>
+        name: ".NET",
+        icon: <DiDotnet/>
     },
     {
         name: "Angular",

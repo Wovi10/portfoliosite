@@ -14,6 +14,14 @@ export const experiencesList = [
             </TimelineDot>
     },
     {
+        title: "DotNET Academy",
+        date: "February 2023",
+        description: ".NET backend developer consultant",
+        icon: <TimelineDot color="primary" variant="filled">
+                <LaptopMacIcon/>
+            </TimelineDot>
+    },
+    {
         title: "Graduated",
         date: "Summer 2022",
         description: "Bachelor Applied Informatics major .NET",
