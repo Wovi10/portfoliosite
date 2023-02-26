@@ -47,7 +47,6 @@ export default function Introduction() {
 						<br />
 						As you can see in my <a href="#experience" className='underline'>timeline</a>, I am now looking for my next opportunity.
                     </div>
-                    bonjour
                     <div className="subtitle underline">
                         <Suspense>
                             <DownloadLink/>
