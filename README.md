@@ -17,3 +17,7 @@ You will see proper components, tables, icons, use of json structures...
 ### See a mistake?
 
 Don't hesitate to contact me. To see how, just visit my page [here](https://www.WoutVinckevleugel.xyz).
+
+
+## GitHub stats
+![GitHub streak stats](https://streak-stats.demolab.com/?user=Wovi10)  
