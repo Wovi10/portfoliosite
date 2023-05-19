@@ -77,6 +77,14 @@ projectsList = [
         icon: <CircleIcon/>
     },
     {
+        name: "TicketTimer",
+        link: "https://github.com/Wovi10/TicketTimer",
+        date: "May 2023",
+        technology: "Python",
+        description: TicketTimer_text(),
+        icon: <CircleIcon/>
+    },
+    {
         name: "What's next?",
         link: "https://github.com/Wovi10/",
         date: "Future",
@@ -213,6 +221,17 @@ function Kotlin_text() {
             Kotlin is one of these languages. I got to know it during my internship at Melexis and wanted to get to know
             it better.
             I will keep up with this throughout the next months.
+        </div>
+    );
+}
+
+function TicketTimer_text() {
+    return (
+        <div className="paragraph">
+            Wanting to keep up with my Python skills, I went to look for something useful to make.
+            <br/>
+            Something that I think is very annoying, is keeping track of the time you spend on tasks at work (Or whatever other reason).
+            It is an easy to use CLI program that keeps track of when you started tasks, it can update them, list them easily and more.
         </div>
     );
 }
