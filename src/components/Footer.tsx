@@ -10,7 +10,7 @@ export default function Footer() {
                     <DownloadLink/>
                 </Suspense>
                 <p>
-                    © 2022 Wout Vinckevleugel. All Rights Reserved.
+                    © 2023 Wout Vinckevleugel. All Rights Reserved.
                 </p>
             </div>
         </footer>
