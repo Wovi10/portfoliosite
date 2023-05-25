@@ -1,6 +1,6 @@
 function downloadResume() {
     const element = document.createElement("a");
-    element.href = "/files/WoutVinckevleugel_CV.pdf";
+    element.href = "/files/CV_VinckevleugelWout_English.pdf";
     element.download = "CV_WoutVinckevleugel.pdf";
     element.click();
 }
