@@ -243,7 +243,7 @@ function Future_text() {
             <br/>
             Some Java, some TS, or something completely different.
             <br/>
-            If you have an idea, please let me know! Click one of the links at <a href="#socials" style="color:blue">my socials</a>!
+            If you have an idea, please let me know! Click one of the links at <a href="#socials"  className="text-blue-600">my socials</a>!
         </div>
     );
 }
