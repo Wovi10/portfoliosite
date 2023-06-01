@@ -1,96 +1,71 @@
-import QuestionMarkRoundedIcon from "@mui/icons-material/QuestionMarkRounded";
-import CircleIcon from '@mui/icons-material/Circle';
-
-export let projectsList: ({ date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: any; technology: string } | { date: string; name: string; link: string; icon: JSX.Element; description: JSX.Element; technology: string })[];
+export let projectsList: ({ date: string; link: JSX.Element; description: JSX.Element; technology: string })[];
 
 projectsList = [
     {
-        name: "Ludo",
-        link: "https://github.com/Wovi10/MensErgerJeNiet",
+        link: LinkWithHref("Ludo", "https://github.com/Wovi10/MensErgerJeNiet"),
         date: "January-May 2019",
         technology: "C# Windows forms",
-        description: Ludo_text(),
-        icon: <CircleIcon/>
+        description: Ludo_text()
     },
     {
-        name: "LEAP",
-        link: "#",
+        link: LinkWithoutHref("LEAP"),
         date: "March-May 2021",
         technology: "Angular TS + Java Springboot",
-        description: Leap_text(),
-        icon: <CircleIcon/>
+        description: Leap_text()
     },
     {
-        name: "PREGA",
-        link: "https://github.com/Wovi10/Racing",
+        link: LinkWithHref("PREGA", "https://github.com/Wovi10/Racing"),
         date: "October-December 2021",
         technology: "C# + EF Core + SQL",
-        description: Prega_text(),
-        icon: <CircleIcon/>
+        description: Prega_text()
     },
     {
-        name: "TestdataAdapter",
-        link: "",
+        link: LinkWithoutHref("TestdataAdapter"),
         date: "February-May 2022",
         technology: "TS + PostgreSQL + Python",
-        description: MLX_text(),
-        icon: <CircleIcon/>
+        description: MLX_text()
     },
     {
-        name: "This site",
-        link: "https://github.com/Wovi10/portfoliosite",
+        link: LinkWithHref("This site", "https://github.com/Wovi10/portfoliosite"),
         date: "September-? 2022",
         technology: "React + TS + TailwindCSS",
-        description: PersonalSite_text(),
-        icon: <CircleIcon/>
+        description: PersonalSite_text()
     },
     {
-        name: "Java Calculator",
-        link: "https://github.com/Wovi10/Calculator",
+        link: LinkWithHref("Java Calculator", "https://github.com/Wovi10/Calculator"),
         date: "October 2022",
         technology: "Java Swing",
-        description: Calculator_text(),
-        icon: <CircleIcon/>
+        description: Calculator_text()
     },
     {
-        name: "Java Currency converter",
-        link: "https://github.com/Wovi10/ValutaConverter",
+        link: LinkWithHref("Java Currency converter", "https://github.com/Wovi10/ValutaConverter"),
         date: "October 2022",
         technology: "JavaFX",
-        description: Currency_text(),
-        icon: <CircleIcon/>
+        description: Currency_text()
     },
     {
-        name: "Java Checklist",
-        link: "https://github.com/Wovi10/Checklist",
+        link: LinkWithHref("Java Checklist", "https://github.com/Wovi10/Checklist"),
         date: "October 2022",
         technology: "JavaFX",
-        description: Checklist_text(),
-        icon: <CircleIcon/>
+        description: Checklist_text()
     },
     {
-        name: "Learning Kotlin",
-        link: "https://github.com/Wovi10/Learning_Kotlin",
+        link: LinkWithHref("Learning kotlin", "https://github.com/Wovi10/Learning_Kotlin"),
         date: "End 2022",
         technology: "Kotlin",
-        description: Kotlin_text(),
-        icon: <CircleIcon/>
+        description: Kotlin_text()
     },
     {
-        name: "TicketTimer",
-        link: "https://github.com/Wovi10/TicketTimer",
+        link: LinkWithHref("TicketTimer", "https://github.com/Wovi10/TicketTimer"),
         date: "May 2023",
         technology: "Python",
-        description: TicketTimer_text(),
-        icon: <CircleIcon/>
+        description: TicketTimer_text()
     },
     {
-        name: "What's next?",
-        link: "https://github.com/Wovi10/",
+        link: LinkWithHref("What's next?", "https://github.com/Wovi10/"),
         date: "Future",
         technology: "?",
-        description: Future_text(),
-        icon: <QuestionMarkRoundedIcon/>
+        description: Future_text()
     },
 ];
 
@@ -101,6 +76,8 @@ function Ludo_text() {
             <br/>
             I opted for the game of Ludo. It could have been a lot better, but this was my first big thing ever,
             so it is nice for me to see where started.
+            <br/>
+            Small Disclaimer. This is not entirely my original code. I noticed it wasn't working anymore when I was in my first year of uni, so I reworked it.
         </div>
     );
 }
@@ -144,7 +121,7 @@ function Prega_text() {
 
 function MLX_text() {
     return (
-        <div className="flex-wrap">
+        <div className="paragraph">
             This was my internship project for my bachelor's.
             <br/>
             During this week period, I had to construct an adapter for test data.
@@ -246,4 +223,16 @@ function Future_text() {
             If you have an idea, please let me know! Click one of the links at <a href="#socials"  className="text-blue-600">my socials</a>!
         </div>
     );
+}
+
+function LinkWithHref(name: string, url: string): JSX.Element{
+    return (
+        <a title={name} type='button' href={url} target='_blank' rel='noreferrer' className='underline' >{name}</a>
+    )
+}
+
+function LinkWithoutHref(name: string): JSX.Element{
+    return (
+        <p>{name}</p>
+    )
 }
