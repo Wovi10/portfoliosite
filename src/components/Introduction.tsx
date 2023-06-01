@@ -45,7 +45,7 @@ export default function Introduction() {
                         <br/>
                         This choice seemed a good one as I finished my <strong>bachelor in Applied informatics</strong> in 2022.
 						<br />
-						As you can see in my <a href="#experience" className='underline'>timeline</a>, I am now looking for my next opportunity.
+						As you can see in my <a href="#experience" className='underline'>timeline</a>, I am always looking for a next opportunity.
                     </div>
                     <div className="subtitle underline">
                         <Suspense>
