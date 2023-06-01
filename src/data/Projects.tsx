@@ -144,7 +144,7 @@ function Prega_text() {
 
 function MLX_text() {
     return (
-        <div className="flex-wrap">
+        <div className="paragraph">
             This was my internship project for my bachelor's.
             <br/>
             During this week period, I had to construct an adapter for test data.

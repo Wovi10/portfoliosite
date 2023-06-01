@@ -239,3 +239,10 @@ nav#mobileNav .hamburger {
 
 
 /*endregion*/
+
+.timelineDescription{
+    @media screen and (max-width: 750px) {
+        overflow: auto;
+        text-overflow: ellipsis;
+    }
+}
