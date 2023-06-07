@@ -18,7 +18,7 @@ export default function Introduction() {
                         Here you'll find who I am and what drives me.
                         But also what I did so far and what my future might look like.
                         <br />
-                        Remember, this website is a <a className='text-red-600'>work in progress</a>.
+                        Remember, this website is a <span className='text-red-600'>work in progress</span>.
                     </div>
                     <div className="subtitle">
                         About me
