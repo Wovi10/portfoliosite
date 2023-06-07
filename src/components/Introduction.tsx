@@ -1,3 +1,4 @@
+import { ClassNames } from '@emotion/react';
 import {lazy, Suspense} from 'react';
 
 const DownloadLink = lazy(() => import ("./DownloadLink"));
@@ -16,6 +17,8 @@ export default function Introduction() {
                     <div className="paragraph">
                         Here you'll find who I am and what drives me.
                         But also what I did so far and what my future might look like.
+                        <br />
+                        Remember, this website is a <a className='text-red-600'>work in progress</a>.
                     </div>
                     <div className="subtitle">
                         About me
