@@ -13,7 +13,7 @@ export default function PortfolioTimeline() {
                 Following points on my timeline are ordered from most recent to oldest.
                 <br/>
                 Only my school and Informatics focused job experience is shown. For more detail, please download my
-                resume.
+                resume or contact me.
             </div>
             <Timeline position="alternate">
                 {experiencesList.map((experience, index) =>

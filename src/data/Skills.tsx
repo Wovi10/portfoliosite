@@ -34,11 +34,7 @@ export const hardskills_list = [
         icon: <DiReact/>
     },
     {
-        name: "Java",
-        icon: <DiJava/>
-    },
-    {
-        name: "MySQL",
+        name: "SQL",
         icon: <DiMysql/>
     },
     {
@@ -53,7 +49,10 @@ export const hardskills_list = [
         name: "Python",
         icon: <DiPython/>
     },
-
+    {
+        name: "Java",
+        icon: <DiJava/>
+    },
 ];
 
 export const softskills_list = [
