@@ -2,33 +2,39 @@ export let projectsList: ({ date: string; link: JSX.Element; description: JSX.El
 
 projectsList = [
     {
-        link: LinkWithHref("Ludo", "https://github.com/Wovi10/MensErgerJeNiet"),
-        date: "January-May 2019",
-        technology: "C# Windows forms",
-        description: Ludo_text()
+        link: LinkWithHref("What's next?", "https://github.com/Wovi10/"),
+        date: "Future",
+        technology: "?",
+        description: Future_text()
     },
     {
-        link: LinkWithoutHref("LEAP"),
-        date: "March-May 2021",
-        technology: "Angular TS + Java Springboot",
-        description: Leap_text()
+        link: LinkWithoutHref("Axalta New Generation Software"),
+        date: "May 2023 - ?",
+        technology: CreateTechnologyString([".NET", "KnockoutJs"]),
+        description: NGS_text()
     },
     {
-        link: LinkWithHref("PREGA", "https://github.com/Wovi10/Racing"),
-        date: "October-December 2021",
-        technology: "C# + EF Core + SQL",
-        description: Prega_text()
+        link: LinkWithoutHref("Advanced Inventory Management"),
+        date: "May 2023 - ?",
+        technology: CreateTechnologyString([".NET", "React"]),
+        description: AIM_text()
     },
     {
-        link: LinkWithoutHref("TestdataAdapter"),
-        date: "February-May 2022",
-        technology: "TS + PostgreSQL + Python",
-        description: MLX_text()
+        link: LinkWithHref("TicketTimer", "https://github.com/Wovi10/TicketTimer"),
+        date: "May 2023",
+        technology: "Python",
+        description: TicketTimer_text()
+    },
+    {
+        link: LinkWithHref("Learning kotlin", "https://github.com/Wovi10/Learning_Kotlin"),
+        date: "End 2022",
+        technology: "Kotlin",
+        description: Kotlin_text()
     },
     {
         link: LinkWithHref("This site", "https://github.com/Wovi10/portfoliosite"),
-        date: "September-? 2022",
-        technology: "React + TS + TailwindCSS",
+        date: "Sep-Dec 2022",
+        technology: CreateTechnologyString(["React", "TS", "TailwindCSS"]),
         description: PersonalSite_text()
     },
     {
@@ -50,22 +56,28 @@ projectsList = [
         description: Checklist_text()
     },
     {
-        link: LinkWithHref("Learning kotlin", "https://github.com/Wovi10/Learning_Kotlin"),
-        date: "End 2022",
-        technology: "Kotlin",
-        description: Kotlin_text()
+        link: LinkWithoutHref("LEAP"),
+        date: "March-May 2021",
+        technology: CreateTechnologyString(["Angular TS", "Java Springboot"]),
+        description: Leap_text()
     },
     {
-        link: LinkWithHref("TicketTimer", "https://github.com/Wovi10/TicketTimer"),
-        date: "May 2023",
-        technology: "Python",
-        description: TicketTimer_text()
+        link: LinkWithoutHref("TestdataAdapter"),
+        date: "Feb-May 2022",
+        technology: CreateTechnologyString(["TS", "PostgreSQL", "Python"]),
+        description: MLX_text()
     },
     {
-        link: LinkWithHref("What's next?", "https://github.com/Wovi10/"),
-        date: "Future",
-        technology: "?",
-        description: Future_text()
+        link: LinkWithHref("PREGA", "https://github.com/Wovi10/Racing"),
+        date: "October-December 2021",
+        technology: CreateTechnologyString([".NET EF Core", "SQL"]),
+        description: Prega_text()
+    },
+    {
+        link: LinkWithHref("Ludo", "https://github.com/Wovi10/MensErgerJeNiet"),
+        date: "January-May 2019",
+        technology: "C# Windows forms",
+        description: Ludo_text()
     },
 ];
 
@@ -213,6 +225,34 @@ function TicketTimer_text() {
     );
 }
 
+function AIM_text(){
+    return (
+        <div className="paragraph">
+            According to Axalta:
+            <br/>
+            'A single and simple tool to manage every item of your inventory. Manage paint and non-paint inventory using a single cloud-based tool. If stock of a product falls below a set minimum level, an order list is automatically created. This saves you time, effort and money by streamlining the entire ordering and stocking process.'
+            <br/>
+            Made in .NET6 and React, I can use the latest technologies and follow the current big ideas within software development.
+            <br/>
+            It started a long time ago, so working with and updating legacy code is not an issue for me.
+        </div>
+    )
+}
+
+function NGS_text(){
+    return (
+        <div className="paragraph">
+            According to Axalta:
+            <br/>
+            'All-inclusive management system helps paint shops drive better business performance and better efficiency'
+            <br/>
+            Made in .NET6 and React, I can use the latest technologies and follow the current big ideas within software development.
+            <br/>
+            It started a long time ago, so working with and updating legacy code is not an issue for me.
+        </div>
+    )
+}
+
 function Future_text() {
     return (
         <div className="paragraph">
@@ -235,4 +275,14 @@ function LinkWithoutHref(name: string): JSX.Element{
     return (
         <p>{name}</p>
     )
+}
+
+function CreateTechnologyString(technologies: string[]): string{
+    let techString = "";
+
+    technologies.forEach(technology => {
+        if(techString !== "") techString += " + ";
+        techString += technology;
+    });
+    return techString;
 }
