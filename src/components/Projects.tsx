@@ -5,12 +5,14 @@ export default function Projects() {
         <section id="projects">
             <div className="container flex flex-col px-0">
                 <div className="m-auto py-1 title">
-                    My projects so far.
+                    My projects so far
                 </div>
                 <div className="m-auto py-1 text-center">
-                    Almost all my projects so far, ordered form oldest to newest.
+                    Almost all my personal projects so far, ordered form oldest to newest.
                     <br/>
                     If you have any remarks to my code, just leave a comment on the GitHub repo!
+                    <br/>
+                    Projects owned by companies I worked for, do not have a repo available and won't go into detail.
                 </div>
                 <div className="m-auto py-1"></div>
                 <div className="m-auto py-1">Nearly all titles are clickable.</div>
