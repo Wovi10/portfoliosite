@@ -1,9 +1,7 @@
 import {
     DiAngularSimple,
-    DiDotnet,
-    DiGithubBadge,
-    DiGoogleAnalytics,
-    DiJava,
+    DiDotnet, DiGit,
+    DiGoogleAnalytics, DiJava,
     DiJavascript1,
     DiMysql,
     DiNodejsSmall,
@@ -16,6 +14,7 @@ import {GiSandsOfTime, GiThink} from "react-icons/gi";
 import {IoEarOutline, IoSpeedometerOutline} from "react-icons/io5";
 import {RiTeamLine} from "react-icons/ri";
 import {SiFuturelearn} from "react-icons/si";
+import React from "react";
 
 export const hardskills_list = [
     {
@@ -35,8 +34,8 @@ export const hardskills_list = [
         icon: <DiReact/>
     },
     {
-        name: "PostGreSQL",
-        icon: <DiPostgresql/>
+        name: "Java",
+        icon: <DiJava/>
     },
     {
         name: "MySQL",
@@ -47,8 +46,8 @@ export const hardskills_list = [
         icon: <DiNodejsSmall/>
     },
     {
-        name: "GitHub",
-        icon: <DiGithubBadge/>
+        name: "Git",
+        icon: <DiGit/>
     },
     {
         name: "Python",

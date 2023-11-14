@@ -75,7 +75,7 @@ function Ludo_text() {
             This was my 'big' final project for 12th grade. We had to make a board game in C# windows forms.
             <br/>
             I opted for the game of Ludo. It could have been a lot better, but this was my first big thing ever,
-            so it is nice for me to see where started.
+            so it is nice for me to see where I started.
             <br/>
             Small Disclaimer. This is not entirely my original code. I noticed it wasn't working anymore when I was in my first year of uni, so I reworked it.
         </div>

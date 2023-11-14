@@ -8,9 +8,11 @@ export default function Projects() {
                     My projects so far.
                 </div>
                 <div className="m-auto py-1 text-center">
-                    Almost all my projects so far, ordered form oldest to newest.
+                    Almost all my personal projects so far, ordered form oldest to newest.
                     <br/>
                     If you have any remarks to my code, just leave a comment on the GitHub repo!
+                    <br/>
+                    No projects from companies I've worked for are mentioned.
                 </div>
                 <div className="m-auto py-1"></div>
                 <div className="m-auto py-1">Nearly all titles are clickable.</div>
